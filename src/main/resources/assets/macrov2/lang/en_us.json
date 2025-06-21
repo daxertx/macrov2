@@ -1,0 +1,17 @@
+{
+
+  "item.macrov2.pink_garnet": "Pink Garnet",
+  "item.macrov2.raw_pink_garnet": "Raw Pink Garnet",
+  "item.macrov2.gauntlet": "Gauntlet of a strong men",
+  "item.macrov2.chisel": "block modifier",
+
+  "block.macrov2.pink_garnet_block": "block of pink garnet",
+  "block.macrov2.raw_pink_garnet_block": "pink garnet ore",
+  "block.macrov2.diddy_block": "Diddy block",
+  "block.macrov2.pink_garnet_ore": "pink garnet ore",
+  "block.macrov2.pink_garnet_deepslate_ore": "pink garnet deepslate ore",
+
+  "itemgroup.macrov2.pink_garnet_items": "modded items",
+  "itemgroup.macrov2.pink_garnet_blocks": "modded blocks"
+
+}
