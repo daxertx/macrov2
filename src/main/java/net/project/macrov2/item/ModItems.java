@@ -45,6 +45,10 @@ public class ModItems {
 
             //foods:
             entries.add(TOAST);
+            //fuels:
+            entries.add(COMPRESSED_STICK);
+            entries.add(SUPER_COMPRESSED_STICK);
+
         });
     }
 
