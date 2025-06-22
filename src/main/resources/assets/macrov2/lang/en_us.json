@@ -21,7 +21,8 @@
   "itemgroup.macrov2.pink_garnet_items": "Modded items",
   "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
 
-  "tooltip.macrov2.magic_block.tooltip": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
-  "tooltip.macrov2.chisel.shift_down": "Change blocks to their brick version",
-  "tooltip.macrov2.chisel": "Press §eShift§r to see more information, could be reversed"
+  "tooltip.macrov2.magic_block.tooltip_shift_down": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
+  "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",
+  "tooltip.macrov2.chisel.shift_down": "Change blocks to their brick version, could be reversed",
+  "tooltip.macrov2.chisel": "Press §eShift§r to see more information"
 }
