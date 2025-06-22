@@ -2,6 +2,7 @@ package net.project.macrov2.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,6 +15,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.item.ModItems;
 
 public class MagicBlock extends Block {
@@ -25,7 +27,7 @@ public class MagicBlock extends Block {
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit)
     {
-        world.playSound(player,pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS,2f,1f);
+        world.playSound(player,pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS,5f,2f);
 
         return ActionResult.SUCCESS;
     }
@@ -34,10 +36,17 @@ public class MagicBlock extends Block {
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity)
         {
-            if(itemEntity.getStack().getItem()== ModItems.RAW_PINK_GARNET)
+            if(itemEntity.getStack().getItem() == ModItems.RAW_PINK_GARNET)
             {
-                itemEntity.setStack(new ItemStack(Items.DIAMOND, itemEntity.getStack().getCount()));
+                //raw pink garnet is droped on the block then item turn to raw pink garnet
+                itemEntity.setStack(new ItemStack(Items.RAW_GOLD, itemEntity.getStack().getCount()));
             }
+            if(itemEntity.getStack().getItem() == ModItems.PINK_GARNET)
+            {
+
+                itemEntity.setStack(new ItemStack(Items.GOLD_INGOT, itemEntity.getStack().getCount()));
+            }
+
         }
         super.onSteppedOn(world, pos, state, entity);
     }
