@@ -6,7 +6,7 @@
   "item.macrov2.chisel": "Block modifier",
 
   "item.macrov2.compressed_stick": "Compressed stick",
-  "item.macrov2.super_compressed_stick": "Super_compressed stick",
+  "item.macrov2.super_compressed_stick": "Super compressed stick",
 
   "item.macrov2.toast": "Toast",
 
@@ -19,6 +19,9 @@
   "block.macrov2.diddy_block": "Diddy block",
 
   "itemgroup.macrov2.pink_garnet_items": "Modded items",
-  "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks"
+  "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
 
+  "tooltip.macrov2.magic_block.tooltip": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
+  "tooltip.macrov2.chisel.shift_down": "Change blocks to their brick version",
+  "tooltip.macrov2.chisel": "Press §eShift§r to see more information, could be reversed"
 }

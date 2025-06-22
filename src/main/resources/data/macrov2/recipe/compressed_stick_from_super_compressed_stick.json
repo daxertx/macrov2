@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "macrov2:super_compressed_stick"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "macrov2:compressed_stick"
+  }
+}
