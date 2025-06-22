@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_super_compressed_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "macrov2:super_compressed_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:compress_sticks_from_super_compress_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_super_compressed_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:compress_sticks_from_super_compress_stick"
+    ]
+  }
+}

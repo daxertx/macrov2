@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    },
+    {
+      "item": "macrov2:compressed_stick"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "macrov2:super_compressed_stick"
+  }
+}
