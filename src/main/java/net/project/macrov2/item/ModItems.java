@@ -11,15 +11,17 @@ import net.minecraft.util.Identifier;
 import net.project.macrov2.item.custom.ChiselItem;
 
 public class ModItems {
+    //items
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
     public static final Item GAUNTLET = registerItem("gauntlet", new Item(new Item.Settings()));
-
-    public static final Item TOAST= registerItem("toast", new Item(new Item.Settings()));
-
-
+    //
+    //foods
+    public static final Item TOAST = registerItem("toast", new Item(new Item.Settings().food(ModFoodComponents.TOAST)));
+    //
+    //advanced item
     public static final Item CHISEL = registerItem("chisel",new ChiselItem(new Item.Settings().maxDamage(50)));
-
+    //
 
 
         private static Item registerItem(String name, Item item) {
@@ -41,4 +43,5 @@ public class ModItems {
             entries.add(TOAST);
         });
     }
+
 }
