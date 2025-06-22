@@ -19,6 +19,10 @@ public class ModItems {
     //foods
     public static final Item TOAST = registerItem("toast", new Item(new Item.Settings().food(ModFoodComponents.TOAST)));
     //
+    // fuels
+    public static final Item COMPRESSED_STICK = registerItem("compressed_stick",new Item(new Item.Settings()));
+    public static final Item SUPER_COMPRESSED_STICK = registerItem("super_compressed_stick",new Item(new Item.Settings()));
+    //
     //advanced item
     public static final Item CHISEL = registerItem("chisel",new ChiselItem(new Item.Settings().maxDamage(50)));
     //

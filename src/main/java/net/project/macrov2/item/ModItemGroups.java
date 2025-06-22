@@ -18,10 +18,23 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         //adds items to item group
+                        //items as ores
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
-
+                        //
+                        //nothing special
+                        entries.add(ModItems.GAUNTLET);
+                        //
+                        //advanced items
                         entries.add(ModItems.CHISEL);
+                        //
+                        //foods
+                        entries.add(ModItems.TOAST);
+                        //
+                        //fuels
+                        entries.add(ModItems.COMPRESSED_STICK);
+                        entries.add(ModItems.SUPER_COMPRESSED_STICK);
+                        //
                     })
                     .build());
     //
@@ -31,6 +44,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         //adds items to item group
+                        entries.add(ModBlocks.MAGIC_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_ORE);

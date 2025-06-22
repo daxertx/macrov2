@@ -1,6 +1,7 @@
 package net.project.macrov2;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.item.ModItemGroups;
 import net.project.macrov2.item.ModItems;
@@ -17,5 +18,8 @@ public class Macrov2 implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		//fuels
+		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
+		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
 	}
 }
