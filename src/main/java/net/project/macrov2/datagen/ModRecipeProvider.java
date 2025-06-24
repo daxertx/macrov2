@@ -69,7 +69,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.LAPIS_BLOCK), conditionsFromItem(Blocks.LAPIS_BLOCK))
                 .criterion(hasItem(Blocks.REDSTONE_BLOCK), conditionsFromItem(Blocks.REDSTONE_BLOCK))
                 .offerTo(exporter);
-
+        //LAMP
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.PINK_GARNET_LAMP)
                 .pattern("PPP")
                 .pattern("PTP")
@@ -79,6 +79,78 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 //UNLOCK RECIPE CONDITIONS
                 .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
                 .criterion(hasItem(Blocks.REDSTONE_LAMP),conditionsFromItem(Blocks.REDSTONE_LAMP))
+                .offerTo(exporter);
+        //DOOR
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.PINK_GARNET_DOOR, 3)
+                .pattern("PP")
+                .pattern("PP")
+                .pattern("PP")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+
+                .offerTo(exporter);
+                //button
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.PINK_GARNET_BUTTON)
+                .pattern("P")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+
+                .offerTo(exporter);
+        //stairs
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_STAIRS, 4)
+                .pattern("P  ")
+                .pattern("PP ")
+                .pattern("PPP")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+
+                .offerTo(exporter);
+        //SLAB
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_SLAB, 6)
+                .pattern("PPP")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+
+                .offerTo(exporter);
+        //PRESSURE PLATE
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_PRESSURE_PLATE, 1)
+                .pattern("PP")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+
+                .offerTo(exporter);
+        //FENCE
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_FENCE, 3)
+                .pattern("PSP")
+                .pattern("PSP")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        //FENCE GATE
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.PINK_GARNET_FENCE_GATE)
+                .pattern("SPS")
+                .pattern("SPS")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        //TRAPDOOR
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.PINK_GARNET_TRAPDOOR, 2)
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
                 .offerTo(exporter);
 
     }
