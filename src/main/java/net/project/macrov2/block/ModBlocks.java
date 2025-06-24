@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.project.macrov2.Macrov2;
 import net.project.macrov2.block.custom.MagicBlock;
+import net.project.macrov2.block.custom.PinkGarnetLampBlock;
 
 public class ModBlocks {
     //blocks code start
@@ -54,6 +55,14 @@ public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",new PinkGarnetLampBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().luminance
+            (State -> State.get(PinkGarnetLampBlock.LAMP_ON) ?
+                    15
+                    //TRUE
+                    :
+                    //FALSE
+                    0
+                    )));
 
     private static Block registerBlock(String name, Block block)
     {

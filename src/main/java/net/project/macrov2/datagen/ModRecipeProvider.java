@@ -57,17 +57,28 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(ModItems.SUPER_COMPRESSED_STICK), conditionsFromItem(ModItems.SUPER_COMPRESSED_STICK))
                 .offerTo(exporter, "compress_sticks_from_super_compress_stick");
         //Shaped recipe
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MAGIC_BLOCK)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK)
                 .pattern("LRL")
                 .pattern("RPR")
                 .pattern("LRL")
                 .input('L', Blocks.LAPIS_BLOCK)
                 .input('R', Blocks.REDSTONE_BLOCK)
                 .input('P', ModBlocks.PINK_GARNET_BLOCK)
+                // UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
+                .criterion(hasItem(Blocks.LAPIS_BLOCK), conditionsFromItem(Blocks.LAPIS_BLOCK))
+                .criterion(hasItem(Blocks.REDSTONE_BLOCK), conditionsFromItem(Blocks.REDSTONE_BLOCK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.PINK_GARNET_LAMP)
+                .pattern("PPP")
+                .pattern("PTP")
+                .pattern("PPP")
+                .input('P', ModItems.PINK_GARNET)
+                .input('T', Blocks.REDSTONE_LAMP)
                 //UNLOCK RECIPE CONDITIONS
-                .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
-                .criterion(hasItem(Items.LAPIS_BLOCK),conditionsFromItem(Items.LAPIS_BLOCK))
-                .criterion(hasItem(Items.REDSTONE_BLOCK),conditionsFromItem(Items.REDSTONE_BLOCK))
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Blocks.REDSTONE_LAMP),conditionsFromItem(Blocks.REDSTONE_LAMP))
                 .offerTo(exporter);
 
     }
