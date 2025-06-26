@@ -29,9 +29,10 @@ public class ModRecipeProvider extends FabricRecipeProvider
     @Override
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> PINK_GARNET_SMELTABLES = List.of(ModItems.RAW_PINK_GARNET, ModBlocks.PINK_GARNET_ORE,ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
-        //smelting 1 of items in list gives raw pink garnet
-        offerSmelting(exporter,PINK_GARNET_SMELTABLES, RecipeCategory.MISC,ModItems.RAW_PINK_GARNET,1f,200,"pink_garnet");
-        offerBlasting(exporter,PINK_GARNET_SMELTABLES, RecipeCategory.MISC,ModItems.RAW_PINK_GARNET,1f,100,"pink_garnet");
+        // Ores/Blocks → RAW_PINK_GARNET
+        offerSmelting(exporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 1f, 200, "pink_garnet");
+        offerBlasting(exporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.PINK_GARNET, 1f, 100, "pink_garnet");
+
         // 9 item = 1 item + it can be reversed
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,ModItems.PINK_GARNET,RecipeCategory.DECORATIONS,ModBlocks.PINK_GARNET_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,ModItems.RAW_PINK_GARNET,RecipeCategory.DECORATIONS,ModBlocks.RAW_PINK_GARNET_BLOCK);
