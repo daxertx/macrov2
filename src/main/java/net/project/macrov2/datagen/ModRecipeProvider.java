@@ -153,6 +153,61 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 //UNLOCK RECIPE CONDITIONS
                 .criterion(hasItem(ModBlocks.PINK_GARNET_BLOCK),conditionsFromItem(ModBlocks.PINK_GARNET_BLOCK))
                 .offerTo(exporter);
-
+        //TOOLS
+        //sword
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SWORD)
+                .pattern(" P ")
+                .pattern(" P ")
+                .pattern(" S ")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        //pickaxe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE)
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        //axe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE)
+                .pattern("PS")
+                .pattern("PS")
+                .pattern(" S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        //shovel
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL)
+                .pattern("P")
+                .pattern("S")
+                .pattern("S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        //hoe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE)
+                .pattern("PP")
+                .pattern(" S")
+                .pattern(" S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
     }
 }

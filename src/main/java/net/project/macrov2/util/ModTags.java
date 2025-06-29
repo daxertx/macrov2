@@ -12,8 +12,10 @@ public class ModTags
     public static class Blocks
     {
 
-        public static final TagKey<Block> TRANSFORMABLE_ITEMS = createTag("tramsformable_block");
+        public static final TagKey<Block> NEEDS_PINK_GARNET_TOOL = createTag("needs_pink_garnet_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PINK_GARNET_TOOL = createTag("incorrect_for_pink_garnet_tool");
 
+        //public static final TagKey<Block> TRANSFORMABLE_ITEMS = createTag("tramsformable_block");
         private static TagKey<Block> createTag(String name)
         {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Macrov2.MOD_ID, name));

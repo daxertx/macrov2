@@ -2,9 +2,8 @@ package net.project.macrov2.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.toast.Toast;
+import net.minecraft.item.*;
 import net.project.macrov2.Macrov2;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,6 +21,13 @@ public class ModItems {
     // fuels
     public static final Item COMPRESSED_STICK = registerItem("compressed_stick",new Item(new Item.Settings()));
     public static final Item SUPER_COMPRESSED_STICK = registerItem("super_compressed_stick",new Item(new Item.Settings()));
+    //
+    //tools
+    public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",new SwordItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,3,-2.4f))));
+    public static final Item PINK_GARNET_PICKAXE = registerItem("pink_garnet_pickaxe",new PickaxeItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1,-2.8f))));
+    public static final Item PINK_GARNET_AXE = registerItem("pink_garnet_axe",new AxeItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,6,-3.2f))));
+    public static final Item PINK_GARNET_SHOVEL = registerItem("pink_garnet_shovel",new ShovelItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1.5f,-3.0f))));
+    public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",new HoeItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,0,-3.0f))));
     //
     //advanced item
     public static final Item CHISEL = registerItem("chisel",new ChiselItem(new Item.Settings().maxDamage(50)));
@@ -48,6 +54,12 @@ public class ModItems {
             //fuels:
             entries.add(COMPRESSED_STICK);
             entries.add(SUPER_COMPRESSED_STICK);
+            //tools:
+            entries.add(PINK_GARNET_SWORD);
+            entries.add(PINK_GARNET_PICKAXE);
+            entries.add(PINK_GARNET_AXE);
+            entries.add(PINK_GARNET_SHOVEL);
+            entries.add(PINK_GARNET_HOE);
 
         });
     }

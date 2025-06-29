@@ -1,7 +1,7 @@
 {
 
-  "item.macrov2.pink_garnet": "Pink Garnet",
-  "item.macrov2.raw_pink_garnet": "Raw Pink Garnet",
+  "item.macrov2.pink_garnet": "Pink garnet",
+  "item.macrov2.raw_pink_garnet": "Raw pink garnet",
   "item.macrov2.gauntlet": "Gauntlet of a strong men",
   "item.macrov2.chisel": "Block modifier",
 
@@ -9,6 +9,12 @@
   "item.macrov2.super_compressed_stick": "Super compressed stick",
 
   "item.macrov2.toast": "Toast",
+
+  "item.macrov2.pink_garnet_sword": "Pink garnet sword",
+  "item.macrov2.pink_garnet_pickaxe": "Pink garnet pickaxe",
+  "item.macrov2.pink_garnet_axe": "Pink garnet axe",
+  "item.macrov2.pink_garnet_shovel": "Pink garnet shovel",
+  "item.macrov2.pink_garnet_hoe": "Pink garnet hoe",
 
   "block.macrov2.magic_block": "Magic Block",
   "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",
@@ -18,23 +24,24 @@
 
   "block.macrov2.diddy_block": "Diddy block",
 
-  "block.macrov2.pink_garnet_stairs": "Pink Garnet Stairs",
-  "block.macrov2.pink_garnet_slab": "Pink Garnet Slab",
+  "block.macrov2.pink_garnet_stairs": "Pink garnet stairs",
+  "block.macrov2.pink_garnet_slab": "Pink garnet slab",
 
-  "block.macrov2.pink_garnet_button": "Pink Garnet Button",
-  "block.macrov2.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+  "block.macrov2.pink_garnet_button": "Pink garnet button",
+  "block.macrov2.pink_garnet_pressure_plate": "Pink garnet pressure plate",
 
-  "block.macrov2.pink_garnet_fence": "Pink Garnet Fence",
-  "block.macrov2.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
-  "block.macrov2.pink_garnet_wall": "Pink Garnet Wall",
+  "block.macrov2.pink_garnet_fence": "Pink garnet fence",
+  "block.macrov2.pink_garnet_fence_gate": "Pink garnet fence gate",
+  "block.macrov2.pink_garnet_wall": "Pink garnet wall",
 
-  "block.macrov2.pink_garnet_door": "Pink Garnet Door",
-  "block.macrov2.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+  "block.macrov2.pink_garnet_door": "Pink garnet door",
+  "block.macrov2.pink_garnet_trapdoor": "Pink garnet trapdoor",
 
   "block.macrov2.pink_garnet_lamp": "Pink garnet lamp",
 
   "itemgroup.macrov2.pink_garnet_items": "Modded items",
   "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
+  "itemgroup.macrov2.tools":"Modded tools",
 
   "tooltip.macrov2.magic_block.tooltip_shift_down": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
   "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",

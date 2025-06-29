@@ -1,5 +1,7 @@
-// 1.21	2025-06-29T20:55:25.9901967	macro_v2/Tags for minecraft:block
+// 1.21	2025-06-29T22:06:50.9104787	macro_v2/Tags for minecraft:block
 7bdccd94c3ac57a17b5328d295993bd7afc36672 data\minecraft\tags\block\fences.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\macrov2\tags\block\needs_pink_garnet_tool.json
 3f737511e761a7db0e82191a916300459ea314f6 data\minecraft\tags\block\walls.json
 0a3ff59287981fc2bfc5cc210b8911e8bcc23a11 data\minecraft\tags\block\needs_iron_tool.json
+a9898b6dcb51ecdcb98054a7274dbb98b4d8eedb data\minecraft\tags\block\needs_diamond_tool.json
 1460077ef9182b013e7705f71f84a653a3f28c33 data\minecraft\tags\block\mineable\pickaxe.json
