@@ -17,6 +17,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.project.macrov2.block.ModBlocks;
+import net.project.macrov2.component.ModDataComponentTypes;
 
 import java.util.List;
 import java.util.Map;
@@ -70,6 +71,7 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
                 //ender dragon hurt sound plays on block changing
                 world.playSound(null,context.getBlockPos(), SoundEvents.BLOCK_COPPER_TRAPDOOR_OPEN, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -85,6 +87,13 @@ public class ChiselItem extends Item {
         else
         {
             tooltip.add(Text.translatable("tooltip.macrov2.chisel"));
+        }
+        if(stack.get(ModDataComponentTypes.COORDINATES) != null)
+        {
+            //if is a thing and not empty
+            //add a tooltip msg + edit stack get msg to look nicer
+            String textonitem = ("Last block changed is at: "+stack.get(ModDataComponentTypes.COORDINATES)).replace("BlockPos","").replace("{","(").replace("}",")");
+            tooltip.add(Text.literal(textonitem));
         }
         super.appendTooltip(stack, context, tooltip, type);
     }

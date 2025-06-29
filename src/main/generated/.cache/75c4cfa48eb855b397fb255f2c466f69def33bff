@@ -1,4 +1,4 @@
-// 1.21	2025-06-26T17:57:52.0900596	macro_v2/Model Definitions
+// 1.21	2025-06-29T20:55:25.9851956	macro_v2/Model Definitions
 980b6dad9ad6cc0a2607313e6196ee2fddf2e6e1 assets\macrov2\models\block\magic_block.json
 f85251bfb77e944c2d705b809799fd898e3b0c7f assets\macrov2\models\block\pink_garnet_button_pressed.json
 7b711c092914f75077f51df99b6ca7c9974cd68e assets\macrov2\blockstates\pink_garnet_pressure_plate.json
@@ -56,8 +56,8 @@ db76a0b1aebe92dd8e8d9899dae905730ba74d5d assets\macrov2\models\block\pink_garnet
 588334fc4572652ca3ff9764de36578b28b082d8 assets\macrov2\models\item\pink_garnet_button.json
 8cb0eb2c8a7a027d173793643eae86595b93022e assets\macrov2\models\block\pink_garnet_fence_gate_open.json
 f29adf46c2b736a9ee2bd06ff663f50d741c0241 assets\macrov2\models\item\pink_garnet.json
-13d1b856bc8f0a970dd5df23948970c67536008e assets\macrov2\models\block\pink_garnet_trapdoor_top.json
 0b909cb49a1c436404058459e28223408a8c859b assets\macrov2\models\block\pink_garnet_wall_inventory.json
+13d1b856bc8f0a970dd5df23948970c67536008e assets\macrov2\models\block\pink_garnet_trapdoor_top.json
 29b12c04d1b2ab0d3b29353f1a61f5ba3c2a62f1 assets\macrov2\models\item\pink_garnet_wall.json
 6c3d4bad3f77748c28992ed501c29bcb409121cc assets\macrov2\blockstates\pink_garnet_lamp.json
 88425edfbacb1a547468ad112856ad134739d19d assets\macrov2\models\block\pink_garnet_block.json
@@ -72,8 +72,8 @@ e87a50348f335d3be8d8299a7f77baa241b45670 assets\macrov2\models\block\pink_garnet
 0a822eccbb9641959eeb1cb2a46c55db6ddc83e2 assets\macrov2\models\block\pink_garnet_ore.json
 34a6a1e48dbb1212acb81f12b16251e7f229f872 assets\macrov2\blockstates\pink_garnet_trapdoor.json
 fb9fb199df3af8d99a6f9662c304caaa82eda295 assets\macrov2\models\item\compressed_stick.json
-4cf1af4b88c19b4db6896503e108078475bd77d3 assets\macrov2\models\item\super_compressed_stick.json
 973c7ed2433bffca90ebdca1d26dd4791fbe43e6 assets\macrov2\blockstates\magic_block.json
+4cf1af4b88c19b4db6896503e108078475bd77d3 assets\macrov2\models\item\super_compressed_stick.json
 ffa6afea028c86bf2ec984d097959226f0f743cc assets\macrov2\models\block\pink_garnet_door_bottom_left_open.json
 69f646113107a8fe7201e9d0df33ebcc44b303cd assets\macrov2\models\block\pink_garnet_door_top_right.json
 bcc48843c5d3ef443c493ec9269402d19d948be2 assets\macrov2\models\item\diddy_block.json
