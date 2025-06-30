@@ -67,8 +67,8 @@ public class ModItemGroups {
                     .build());
     //tools item group
     public static final ItemGroup TOOLS = Registry.register(Registries.ITEM_GROUP, Identifier.of(Macrov2.MOD_ID,"tools"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
-                    .displayName(Text.translatable("itemgroup.macrov2.tools"))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PINK_GARNET_SWORD))
+                    .displayName(Text.translatable("itemgroup.macrov2.gears"))
                     .entries((displayContext, entries) ->
                     {
                         //tools:
@@ -77,6 +77,13 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_AXE);
                         entries.add(ModItems.PINK_GARNET_SHOVEL);
                         entries.add(ModItems.PINK_GARNET_HOE);
+                        entries.add(ModItems.PINK_GARNET_HAMMER);
+
+                        entries.add(ModItems.PINK_GARNET_HELMET);
+                        entries.add(ModItems.PINK_GARNET_CHESTPLATE);
+                        entries.add(ModItems.PINK_GARNET_LEGGINGS);
+                        entries.add(ModItems.PINK_GARNET_BOOTS);
+
 
                     })
                     .build());

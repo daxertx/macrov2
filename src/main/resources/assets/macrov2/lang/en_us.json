@@ -3,7 +3,9 @@
   "item.macrov2.pink_garnet": "Pink garnet",
   "item.macrov2.raw_pink_garnet": "Raw pink garnet",
   "item.macrov2.gauntlet": "Gauntlet of a strong men",
+
   "item.macrov2.chisel": "Block modifier",
+  "item.macrov2.pink_garnet_hammer": "Very strong hammer",
 
   "item.macrov2.compressed_stick": "Compressed stick",
   "item.macrov2.super_compressed_stick": "Super compressed stick",
@@ -15,6 +17,12 @@
   "item.macrov2.pink_garnet_axe": "Pink garnet axe",
   "item.macrov2.pink_garnet_shovel": "Pink garnet shovel",
   "item.macrov2.pink_garnet_hoe": "Pink garnet hoe",
+
+  "item.macrov2.pink_garnet_helmet": "Pink garnet helmet",
+  "item.macrov2.pink_garnet_chestplate": "Pink garnet chestplate",
+  "item.macrov2.pink_garnet_leggings": "Pink garnet leggings",
+  "item.macrov2.pink_garnet_boots": "Pink garnet boots",
+
 
   "block.macrov2.magic_block": "Magic Block",
   "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",
@@ -41,7 +49,7 @@
 
   "itemgroup.macrov2.pink_garnet_items": "Modded items",
   "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
-  "itemgroup.macrov2.tools":"Modded tools",
+  "itemgroup.macrov2.gears":"Modded gear",
 
   "tooltip.macrov2.magic_block.tooltip_shift_down": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
   "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",
