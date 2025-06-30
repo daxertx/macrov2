@@ -3,6 +3,7 @@ package net.project.macrov2.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.toast.Toast;
 import net.minecraft.item.*;
+import net.minecraft.util.Rarity;
 import net.project.macrov2.Macrov2;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -72,5 +73,6 @@ public class ModItems {
     public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.CHESTPLATE,new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
     public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.LEGGINGS,new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
     public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
-
+    //horse armor
+    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,AnimalArmorItem.Type.EQUESTRIAN,false,new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
 }
