@@ -1,4 +1,4 @@
-// 1.21	2025-06-30T14:11:11.7336738	macro_v2/Recipes
+// 1.21	2025-07-02T14:54:29.7213543	macro_v2/Recipes
 9b7404f5b730cbfff5f468d48996eb56fc088608 data\macrov2\advancement\recipes\misc\super_compress_stick_from_compress_sticks.json
 ea40bf76fe0766b6287cb576b9319a470962e9ce data\macrov2\recipe\pink_garnet_chestplate.json
 93f01683506f22dd004ffbb0264149c5808ac6b7 data\macrov2\recipe\compress_sticks_from_super_compress_stick.json
@@ -15,6 +15,7 @@ a1ded019759fd7b5a1233209f6a5a72174fc6418 data\macrov2\recipe\pink_garnet_from_bl
 1ef52d54d8c964d48537937546a8559aa826f199 data\macrov2\advancement\recipes\misc\pink_garnet_from_blasting_pink_garnet_ore.json
 0d43341575904d21690770be134ac8c541e1a01b data\macrov2\advancement\recipes\building_blocks\pink_garnet.json
 692f35483e633fa588ea7b0739fbface459a2ee4 data\macrov2\recipe\pink_garnet_lamp.json
+c5afa33981ba7e5f755ef78320559e309618df17 data\macrov2\recipe\pink_garnet_smithing_template.json
 77482e835bf507c23c13c8db5f2dac966ce0343f data\macrov2\recipe\pink_garnet_block.json
 b20906edec8faaf93213c9389ff82d0cf0a2afe2 data\macrov2\recipe\pink_garnet_hoe.json
 6112449309a6fff4b68e39b27a4a8bcfe6067f9c data\macrov2\recipe\pink_garnet_door.json
@@ -26,6 +27,7 @@ b7ff49dd9a6f617009184720ff253578c23ca421 data\macrov2\recipe\pink_garnet_boots.j
 79e7d0aedbfecfd331ac25656c4dd54b0aadff49 data\macrov2\advancement\recipes\tools\pink_garnet_chestplate.json
 b765c5b0a324cd4a88e1f0114a85dd063c57571a data\macrov2\recipe\super_compress_stick_from_compress_sticks.json
 bedd4d948bd58cd58ee7d8621fb7a1cfcf2c1ac8 data\macrov2\recipe\pink_garnet_hammer.json
+0d102c097c28e334e804b42aab43d4005c8dd443 data\macrov2\advancement\recipes\misc\pink_garnet_smithing_template.json
 32f6d35b346abc8894d3d3935095869afac9e459 data\macrov2\recipe\sticks_from_compress_stick.json
 3f369313d577cdaf45df6575f00a618526f56ee7 data\macrov2\advancement\recipes\tools\pink_garnet_leggings.json
 c3a520079f56727b9623ba92d3b057721506f045 data\macrov2\recipe\pink_garnet_leggings.json

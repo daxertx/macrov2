@@ -55,5 +55,11 @@
   "tooltip.macrov2.magic_block.tooltip_shift_down": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
   "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",
   "tooltip.macrov2.chisel.shift_down": "Change blocks to their brick version, could be reversed",
-  "tooltip.macrov2.chisel": "Press §eShift§r to see more information"
+  "tooltip.macrov2.chisel": "Press §eShift§r to see more information",
+
+  "trim_pattern.macrov2.pink_garnet": "Pink garnet Material",
+  "trim_material.macrov2.pink_garnet": "Pink garnet Material",
+  "trim_pattern.macrov2.pink_garnet_smithing_template": "pink garnet Armor pattern",
+  "trim_pattern.macrov2.pink_garnet_template": "pink garnet Armor pattern",
+  "item.macrov2.pink_garnet_smithing_template": "Smithing template"
 }

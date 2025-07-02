@@ -3,6 +3,8 @@ package net.project.macrov2.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.toast.Toast;
 import net.minecraft.item.*;
+import net.minecraft.resource.featuretoggle.FeatureFlag;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Rarity;
 import net.project.macrov2.Macrov2;
 import net.minecraft.registry.Registries;
@@ -63,6 +65,7 @@ public class ModItems {
             entries.add(PINK_GARNET_AXE);
             entries.add(PINK_GARNET_SHOVEL);
             entries.add(PINK_GARNET_HOE);
+            entries.add(PINK_GARNET_SMITHING_TEMPLATE);
 
         });
     }
@@ -75,4 +78,7 @@ public class ModItems {
     public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
     //horse armor
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,AnimalArmorItem.Type.EQUESTRIAN,false,new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
+    //trims
+    public static final Item PINK_GARNET_SMITHING_TEMPLATE = registerItem("pink_garnet_smithing_template", SmithingTemplateItem.of(Identifier.of(Macrov2.MOD_ID,"pink_garnet_smithing_template"), FeatureFlags.VANILLA));
+
 }

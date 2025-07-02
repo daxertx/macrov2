@@ -1,5 +1,6 @@
 package net.project.macrov2.datagen;
 
+import com.ibm.icu.text.UnicodeSetSpanner;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -37,5 +38,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_CHESTPLATE)
                 .add(ModItems.PINK_GARNET_LEGGINGS)
                 .add(ModItems.PINK_GARNET_BOOTS);
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.PINK_GARNET);
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.PINK_GARNET_SMITHING_TEMPLATE);
     }
 }

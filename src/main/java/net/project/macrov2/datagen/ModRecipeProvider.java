@@ -6,13 +6,12 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
+import net.project.macrov2.Macrov2;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.item.ModItems;
 
@@ -250,5 +249,6 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 //UNLOCK RECIPE CONDITIONS
                 .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter);
+        offerSmithingTrimRecipe(exporter,ModItems.PINK_GARNET_SMITHING_TEMPLATE, Identifier.of(Macrov2.MOD_ID,"pink_garnet_smithing_template"));
     }
 }
