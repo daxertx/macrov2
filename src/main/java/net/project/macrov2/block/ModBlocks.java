@@ -12,6 +12,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.project.macrov2.Macrov2;
 import net.project.macrov2.block.custom.MagicBlock;
 import net.project.macrov2.block.custom.PinkGarnetLampBlock;
+import net.project.macrov2.sounds.ModSounds;
 
 public class ModBlocks {
     //blocks code start
@@ -53,7 +54,7 @@ public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs
 
     //blocks code ends
 
-    public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",new PinkGarnetLampBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().luminance
             (State -> State.get(PinkGarnetLampBlock.LAMP_ON) ?

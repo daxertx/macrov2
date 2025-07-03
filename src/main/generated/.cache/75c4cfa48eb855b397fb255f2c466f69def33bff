@@ -1,4 +1,4 @@
-// 1.21	2025-07-03T23:10:29.2458937	macro_v2/Model Definitions
+// 1.21	2025-07-04T00:02:26.1227749	macro_v2/Model Definitions
 980b6dad9ad6cc0a2607313e6196ee2fddf2e6e1 assets\macrov2\models\block\magic_block.json
 e8d25c003306250c4b47d7f6e01c8c1be5e81f79 assets\macrov2\models\item\pink_garnet_leggings_netherite_trim.json
 c42e006d671ee1f9ab07ca7779a7b4ac3db52195 assets\macrov2\models\item\pink_garnet_chestplate_redstone_trim.json
@@ -69,8 +69,8 @@ c5b11a555f7bac4d2f1a8ea66a297b16708027aa assets\macrov2\models\item\pink_garnet_
 bcc48843c5d3ef443c493ec9269402d19d948be2 assets\macrov2\models\item\diddy_block.json
 998bdff52cc504f481e87cefcedb2df2ba6d070c assets\macrov2\models\block\diddy_block.json
 05c7add2138aeda78dc2e85bc91117986328d492 assets\macrov2\models\item\pink_garnet_chestplate_lapis_trim.json
-298a3ff9af5a69a5157c2658741a468d5dfd7b12 assets\macrov2\models\item\pink_garnet_boots_gold_trim.json
 f85251bfb77e944c2d705b809799fd898e3b0c7f assets\macrov2\models\block\pink_garnet_button_pressed.json
+298a3ff9af5a69a5157c2658741a468d5dfd7b12 assets\macrov2\models\item\pink_garnet_boots_gold_trim.json
 7b711c092914f75077f51df99b6ca7c9974cd68e assets\macrov2\blockstates\pink_garnet_pressure_plate.json
 61138da643032a7d63a317c2650acbe0233fbb31 assets\macrov2\models\block\pink_garnet_fence_gate_wall.json
 ad6fd270055606acf8cdbc20805f42d187743b9b assets\macrov2\models\item\pink_garnet_chestplate_copper_trim.json

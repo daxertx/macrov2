@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.macrov2.chisel_use",
+    "sounds": [
+      "macrov2:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.macrov2.magic_block_break",
+    "sounds": [
+      "macrov2:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.macrov2.magic_block_step",
+    "sounds": [
+      "macrov2:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.macrov2.magic_block_place",
+    "sounds": [
+      "macrov2:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.macrov2.magic_block_hit",
+    "sounds": [
+      "macrov2:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.macrov2.magic_block_fall",
+    "sounds": [
+      "macrov2:magic_block_fall"
+    ]
+  }
+}
