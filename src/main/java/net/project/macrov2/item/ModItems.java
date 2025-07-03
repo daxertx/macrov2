@@ -28,6 +28,7 @@ public class ModItems {
     public static final Item SUPER_COMPRESSED_STICK = registerItem("super_compressed_stick",new Item(new Item.Settings()));
     //
     //tools
+    public static final Item KAUPEN_BOW = registerItem("kaupen_bow",new BowItem(new Item.Settings().maxDamage(500)));
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",new SwordItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,3,-2.4f))));
     public static final Item PINK_GARNET_PICKAXE = registerItem("pink_garnet_pickaxe",new PickaxeItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,1,-2.8f))));
     public static final Item PINK_GARNET_AXE = registerItem("pink_garnet_axe",new AxeItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,6,-3.2f))));

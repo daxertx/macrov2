@@ -1,0 +1,6 @@
+{
+  "parent": "macrov2:item/kaupen_bow",
+  "textures": {
+    "layer0": "macrov2:item/kaupen_bow_pulling_2"
+  }
+}
