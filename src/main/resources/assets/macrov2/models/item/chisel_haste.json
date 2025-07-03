@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "macrov2:item/chisel"
+    "layer0": "macrov2:item/chisel_haste"
   }
 }

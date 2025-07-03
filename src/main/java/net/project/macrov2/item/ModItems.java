@@ -37,14 +37,24 @@ public class ModItems {
     //advanced item
     public static final Item CHISEL = registerItem("chisel",new ChiselItem(new Item.Settings().maxDamage(50)));
     //
+    //second advanced item
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",new HammerItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,7,-3.5f))));
+    //armor
+    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.HELMET,new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.CHESTPLATE,new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.LEGGINGS,new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+    //horse armor
+    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,AnimalArmorItem.Type.EQUESTRIAN,false,new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
+    //trims
+    public static final Item PINK_GARNET_SMITHING_TEMPLATE = registerItem("pink_garnet_smithing_template", SmithingTemplateItem.of(Identifier.of(Macrov2.MOD_ID,"pink_garnet_smithing_template"), FeatureFlags.VANILLA));
+    //
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, Identifier.of(Macrov2.MOD_ID, name), item);
+    }
 
-
-        private static Item registerItem(String name, Item item) {
-            return Registry.register(Registries.ITEM, Identifier.of(Macrov2.MOD_ID, name), item);
-        }
-
-        public static void registerModItems() {
-            Macrov2.LOGGER.info("Registering Mod Items for " + Macrov2.MOD_ID);
+    public static void registerModItems() {
+        Macrov2.LOGGER.info("Registering Mod Items for " + Macrov2.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             //adds it to creative mod tab
@@ -69,16 +79,4 @@ public class ModItems {
 
         });
     }
-    //second advanced item
-    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",new HammerItem(ModToolMaterials.PINK_GARNET,new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,7,-3.5f))));
-    //armor
-    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.HELMET,new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
-    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.CHESTPLATE,new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
-    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.LEGGINGS,new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
-    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
-    //horse armor
-    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,AnimalArmorItem.Type.EQUESTRIAN,false,new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
-    //trims
-    public static final Item PINK_GARNET_SMITHING_TEMPLATE = registerItem("pink_garnet_smithing_template", SmithingTemplateItem.of(Identifier.of(Macrov2.MOD_ID,"pink_garnet_smithing_template"), FeatureFlags.VANILLA));
-
 }
