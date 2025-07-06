@@ -95,22 +95,6 @@ public class Macrov2 implements ModInitializer {
 			}
 			return ActionResult.PASS;
 		});
-		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
-			if (!world.isClient && entity instanceof LivingEntity livingTarget) {
-				if (player.getMainHandStack().getItem() instanceof PickaxeItem) {
 
-					DamageSource source = world.getDamageSources().playerAttack(player);
-
-					// Deal damage
-					livingTarget.damage(source, 5.0f);
-
-					// Apply mining fatigue
-					livingTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 200, 2));
-
-					return ActionResult.SUCCESS;
-				}
-			}
-			return ActionResult.PASS;
-		});
 	}
 }

@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 import net.project.macrov2.Macrov2;
 import net.project.macrov2.enchantment.custom.FreezeStrikerEnchantmentEffect;
 import net.project.macrov2.enchantment.custom.LightningStrikerEnchantmentEffect;
+import net.project.macrov2.enchantment.custom.MiningFatigueEnchantmentEffect;
 import net.project.macrov2.enchantment.custom.PoisenStrikerEnchantmentEffect;
 import net.project.macrov2.item.ModItems;
 
@@ -23,6 +24,7 @@ public class ModEnchantments
     public static final RegistryKey<Enchantment> LIGHTNING_STRIKER = RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Macrov2.MOD_ID,"lightning_striker"));
     public static final RegistryKey<Enchantment> FREEZE_STRIKER = RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Macrov2.MOD_ID,"freeze_striker"));
     public static final RegistryKey<Enchantment> POISEN_STRIKER = RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Macrov2.MOD_ID,"poisen_striker"));
+    public static final RegistryKey<Enchantment> MINING_FATIGUE = RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Macrov2.MOD_ID,"mining_fatigue"));
 
 
     public static void bootstrap(Registerable<Enchantment> registerable)
@@ -79,6 +81,22 @@ public class ModEnchantments
                         )).exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
                         .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK, EnchantmentEffectTarget.ATTACKER,
                                 EnchantmentEffectTarget.VICTIM,new PoisenStrikerEnchantmentEffect())
+        );
+        //
+        register(registerable, MINING_FATIGUE, Enchantment.builder(Enchantment.definition(
+                                //for what kind of weapon is enchantment weapons(Sword)
+                                items.getOrThrow(ItemTags.PICKAXES),
+                                //
+                                5,1,
+                                //
+                                Enchantment.leveledCost(5,7),
+                                Enchantment.leveledCost(25,9),
+                                //anvil cost
+                                2,
+                                AttributeModifierSlot.MAINHAND
+                        )).exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
+                        .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK, EnchantmentEffectTarget.ATTACKER,
+                                EnchantmentEffectTarget.VICTIM,new MiningFatigueEnchantmentEffect())
         );
     }
 
