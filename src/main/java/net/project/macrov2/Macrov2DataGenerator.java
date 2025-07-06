@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import net.project.macrov2.datagen.*;
+import net.project.macrov2.enchantment.ModEnchantmentEffect;
+import net.project.macrov2.enchantment.ModEnchantments;
 import net.project.macrov2.trim.ModTrimMaterials;
 import net.project.macrov2.trim.ModTrimPatterns;
 
@@ -28,5 +30,6 @@ public class Macrov2DataGenerator implements DataGeneratorEntrypoint
 	{
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }

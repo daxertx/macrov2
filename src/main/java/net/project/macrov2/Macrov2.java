@@ -5,12 +5,17 @@ import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.projectile.thrown.PotionEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
@@ -18,6 +23,7 @@ import net.minecraft.util.ActionResult;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.component.ModDataComponentTypes;
 import net.project.macrov2.effect.ModEffects;
+import net.project.macrov2.enchantment.ModEnchantmentEffect;
 import net.project.macrov2.item.ModItemGroups;
 import net.project.macrov2.item.ModItems;
 import net.project.macrov2.item.custom.HammerItem;
@@ -50,6 +56,7 @@ public class Macrov2 implements ModInitializer {
 		ModSounds.registerSounds();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModEnchantmentEffect.registerEnchantmentEffect();
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder ->
 		{
@@ -85,6 +92,23 @@ public class Macrov2 implements ModInitializer {
 					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,70,3));
 				}
 				return ActionResult.PASS;
+			}
+			return ActionResult.PASS;
+		});
+		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
+			if (!world.isClient && entity instanceof LivingEntity livingTarget) {
+				if (player.getMainHandStack().getItem() instanceof PickaxeItem) {
+
+					DamageSource source = world.getDamageSources().playerAttack(player);
+
+					// Deal damage
+					livingTarget.damage(source, 5.0f);
+
+					// Apply mining fatigue
+					livingTarget.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 200, 2));
+
+					return ActionResult.SUCCESS;
+				}
 			}
 			return ActionResult.PASS;
 		});

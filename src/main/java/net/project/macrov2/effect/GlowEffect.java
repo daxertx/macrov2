@@ -14,7 +14,6 @@ public class GlowEffect extends StatusEffect
     @Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier)
     {
-
         entity.setGlowing(true);
 
         return super.applyUpdateEffect(entity, amplifier);

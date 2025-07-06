@@ -90,5 +90,9 @@
   "painting.macrov2.shrimp.title": "Shrimp",
   "painting.macrov2.shrimp.author": "NanoAttack",
   "painting.macrov2.saw_them.title": "Saw Them",
-  "painting.macrov2.saw_them.author": "NanoAttack"
+  "painting.macrov2.saw_them.author": "NanoAttack",
+
+  "enchantment.macrov2.lightning_striker": "Lightning striker",
+  "enchantment.macrov2.freeze_striker": "Freeze striker",
+  "enchantment.macrov2.poisen_striker": "Poisen striker"
 }

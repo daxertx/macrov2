@@ -1,4 +1,4 @@
-// 1.21	2025-07-06T15:56:33.4642656	macro_v2/Model Definitions
+// 1.21	2025-07-07T01:23:18.6608742	macro_v2/Model Definitions
 980b6dad9ad6cc0a2607313e6196ee2fddf2e6e1 assets\macrov2\models\block\magic_block.json
 e8d25c003306250c4b47d7f6e01c8c1be5e81f79 assets\macrov2\models\item\pink_garnet_leggings_netherite_trim.json
 c42e006d671ee1f9ab07ca7779a7b4ac3db52195 assets\macrov2\models\item\pink_garnet_chestplate_redstone_trim.json
@@ -31,8 +31,8 @@ c071bc2a1783a887b450713ba8d6a71de8eebcb3 assets\macrov2\models\item\pink_garnet_
 5452ac082bfc081b035781428b7482bbd0e168c1 assets\macrov2\models\item\pink_garnet_boots_redstone_trim.json
 6fbd293e3a7282dc663bc97b6905f0c36903971c assets\macrov2\models\item\magic_block.json
 1016d64b615c02f1a6eb0b5bb2c2a1b345702a1c assets\macrov2\models\block\pink_garnet_wall_post.json
-3627dc2549269aa5e198d857591d36a17bf3ceca assets\macrov2\models\item\pink_garnet_ore.json
 a0b8976a11426f2f9a531c683075b4a0e92c0468 assets\macrov2\blockstates\raw_pink_garnet_block.json
+3627dc2549269aa5e198d857591d36a17bf3ceca assets\macrov2\models\item\pink_garnet_ore.json
 f9d5344459d861f4ad926adabbd77ad05119d014 assets\macrov2\models\item\pink_garnet_block.json
 391ace9b05be3f2cfc383f66376f77891b6d4a9c assets\macrov2\models\item\pink_garnet_leggings_quartz_trim.json
 35f211d987fcc24165c64c649131ae99c236edc9 assets\macrov2\models\block\pink_garnet_door_top_left_open.json
@@ -115,8 +115,8 @@ e0bd955c08481c4529deb1697b70019348d023fc assets\macrov2\models\item\pink_garnet_
 482fc6886351308eefe4a9172108b6652c0293dd assets\macrov2\blockstates\pink_garnet_ore.json
 987969163764f9b90cde9bba97fdf8b14427e6a0 assets\macrov2\blockstates\pink_garnet_deepslate_ore.json
 db76a0b1aebe92dd8e8d9899dae905730ba74d5d assets\macrov2\models\block\pink_garnet_slab.json
-13d1b856bc8f0a970dd5df23948970c67536008e assets\macrov2\models\block\pink_garnet_trapdoor_top.json
 0b909cb49a1c436404058459e28223408a8c859b assets\macrov2\models\block\pink_garnet_wall_inventory.json
+13d1b856bc8f0a970dd5df23948970c67536008e assets\macrov2\models\block\pink_garnet_trapdoor_top.json
 6c3d4bad3f77748c28992ed501c29bcb409121cc assets\macrov2\blockstates\pink_garnet_lamp.json
 88425edfbacb1a547468ad112856ad134739d19d assets\macrov2\models\block\pink_garnet_block.json
 a16aa2c344eabf0b0d458d0153a21e438066b8a0 assets\macrov2\models\item\pink_garnet_pressure_plate.json
