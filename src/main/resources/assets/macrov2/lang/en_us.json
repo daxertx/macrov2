@@ -83,5 +83,12 @@
   "item.minecraft.potion.effect.glow_potion": "Glow Potion",
   "item.minecraft.splash_potion.effect.glow_potion": "Glow Splash Potion",
   "item.minecraft.lingering_potion.effect.glow_potion": "Glow Lingering Potion",
-  "item.minecraft.tipped_arrow.effect.glow_potion": "Glow tipped arrow"
+  "item.minecraft.tipped_arrow.effect.glow_potion": "Glow tipped arrow",
+
+  "painting.macrov2.world.title": "World",
+  "painting.macrov2.world.author": "NanoAttack",
+  "painting.macrov2.shrimp.title": "Shrimp",
+  "painting.macrov2.shrimp.author": "NanoAttack",
+  "painting.macrov2.saw_them.title": "Saw Them",
+  "painting.macrov2.saw_them.author": "NanoAttack"
 }
