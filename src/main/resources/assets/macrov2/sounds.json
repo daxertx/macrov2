@@ -34,5 +34,25 @@
     "sounds": [
       "macrov2:magic_block_fall"
     ]
+  },
+  "dan_music_1":
+  {
+    "sounds":
+    [
+      {
+        "name": "macrov2:dan_music_1",
+        "steam": true
+      }
+    ]
+  },
+  "dan_music_2":
+  {
+    "sounds": [
+      {
+        "name": "macrov2:dan_music_2",
+        "steam": true
+      }
+    ]
   }
+
 }

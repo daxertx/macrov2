@@ -1,6 +1,7 @@
 package net.project.macrov2.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.client.toast.Toast;
 import net.minecraft.item.*;
 import net.minecraft.resource.featuretoggle.FeatureFlag;
@@ -13,6 +14,7 @@ import net.minecraft.util.Identifier;
 import net.project.macrov2.item.custom.ChiselItem;
 import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.item.custom.ModArmorItem;
+import net.project.macrov2.sounds.ModSounds;
 
 public class ModItems {
     //items
@@ -49,8 +51,14 @@ public class ModItems {
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,AnimalArmorItem.Type.EQUESTRIAN,false,new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
     //trims
     public static final Item PINK_GARNET_SMITHING_TEMPLATE = registerItem("pink_garnet_smithing_template", SmithingTemplateItem.of(Identifier.of(Macrov2.MOD_ID,"pink_garnet_smithing_template"), FeatureFlags.VANILLA));
+    //music disk
+    public static final Item DAN_MUSIC_1_MUSIC_DISC = registerItem("dan_music_1_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAN_MUSIC_1_KEY).maxCount(1)));
+    public static final Item DAN_MUSIC_2_MUSIC_DISC = registerItem("dan_music_2_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAN_MUSIC_2_KEY).maxCount(1)));
     //
-    private static Item registerItem(String name, Item item) {
+
+
+    private static Item registerItem(String name, Item item)
+    {
         return Registry.register(Registries.ITEM, Identifier.of(Macrov2.MOD_ID, name), item);
     }
 

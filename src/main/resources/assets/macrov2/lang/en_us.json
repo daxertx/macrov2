@@ -26,6 +26,11 @@
 
   "item.macrov2.pink_garnet_horse_armor": "Pink garnet horse armor",
 
+  "item.macrov2.dan_music_1_music_disc": "dan music 1",
+  "item.macrov2.dan_music_2_music_disc": "dan music 2",
+  "item.macrov2.dan_music_1_music_disc.desc": "1",
+  "item.macrov2.dan_music_2_music_disc.desc": "2",
+
   "block.macrov2.magic_block": "Magic Block",
   "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",
   "block.macrov2.pink_garnet_block": "Block of pink garnet",
@@ -52,6 +57,8 @@
   "itemgroup.macrov2.pink_garnet_items": "Modded items",
   "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
   "itemgroup.macrov2.gears":"Modded gear",
+  "itemgroup.macrov2.misc":"Modded misc",
+
 
   "tooltip.macrov2.magic_block.tooltip_shift_down": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
   "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",
@@ -62,5 +69,19 @@
   "trim_material.macrov2.pink_garnet": "Pink garnet Material",
   "trim_pattern.macrov2.pink_garnet_smithing_template": "pink garnet Armor pattern",
   "trim_pattern.macrov2.pink_garnet_template": "pink garnet Armor pattern",
-  "item.macrov2.pink_garnet_smithing_template": "Smithing template"
+  "item.macrov2.pink_garnet_smithing_template": "Smithing template",
+
+  "effect.macrov2.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Slimey tipped arrow",
+
+  "effect.macrov2.glow": "Slimey",
+
+  "item.minecraft.potion.effect.glow_potion": "Glow Potion",
+  "item.minecraft.splash_potion.effect.glow_potion": "Glow Splash Potion",
+  "item.minecraft.lingering_potion.effect.glow_potion": "Glow Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.glow_potion": "Glow tipped arrow"
 }

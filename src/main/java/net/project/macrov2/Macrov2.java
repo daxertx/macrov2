@@ -3,18 +3,25 @@ package net.project.macrov2;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.entity.projectile.thrown.PotionEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.component.ModDataComponentTypes;
+import net.project.macrov2.effect.ModEffects;
 import net.project.macrov2.item.ModItemGroups;
 import net.project.macrov2.item.ModItems;
 import net.project.macrov2.item.custom.HammerItem;
+import net.project.macrov2.potion.ModPotions;
 import net.project.macrov2.sounds.ModSounds;
 import net.project.macrov2.util.HammerUsageEvent;
 import org.slf4j.Logger;
@@ -28,15 +35,28 @@ public class Macrov2 implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
 		ModDataComponentTypes.registerDataComponentType();
 		//fuels
 		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
 		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
 
+
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+
 		ModSounds.registerSounds();
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
+
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder ->
+		{
+			builder.registerPotionRecipe(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY);
+			builder.registerPotionRecipe(Potions.AWKWARD, Items.GLOWSTONE, ModPotions.GLOW);
+		});
+
 
 
 

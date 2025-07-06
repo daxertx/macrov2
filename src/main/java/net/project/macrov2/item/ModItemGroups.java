@@ -88,6 +88,16 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
                     })
                     .build());
+    public static final ItemGroup MISC = Registry.register(Registries.ITEM_GROUP, Identifier.of(Macrov2.MOD_ID,"misc"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.DAN_MUSIC_2_MUSIC_DISC))
+                    .displayName(Text.translatable("itemgroup.macrov2.misc"))
+                    .entries((displayContext, entries) ->
+                    {
+                        //MUSIC DISK
+                        entries.add(ModItems.DAN_MUSIC_1_MUSIC_DISC);
+                        entries.add(ModItems.DAN_MUSIC_2_MUSIC_DISC);
+                    })
+                    .build());
 
 
 
