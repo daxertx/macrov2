@@ -1,6 +1,7 @@
 package net.project.macrov2.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -10,6 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.project.macrov2.Macrov2;
+import net.project.macrov2.block.custom.CauliflowerCropBlock;
 import net.project.macrov2.block.custom.MagicBlock;
 import net.project.macrov2.block.custom.PinkGarnetLampBlock;
 import net.project.macrov2.sounds.ModSounds;
@@ -64,7 +66,14 @@ public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs
                     //FALSE
                     0
                     )));
+    //crop
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block)
+    {
+        return Registry.register(Registries.BLOCK, Identifier.of(Macrov2.MOD_ID,name), block);
+    }
     private static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name,block);

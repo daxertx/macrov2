@@ -1,20 +1,24 @@
 package net.project.macrov2.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.jukebox.JukeboxSong;
-import net.minecraft.client.toast.Toast;
+import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.item.*;
-import net.minecraft.resource.featuretoggle.FeatureFlag;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.resource.featuretoggle.FeatureFlags;
+import net.minecraft.text.Text;
 import net.minecraft.util.Rarity;
 import net.project.macrov2.Macrov2;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.item.custom.ChiselItem;
 import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.item.custom.ModArmorItem;
 import net.project.macrov2.sounds.ModSounds;
+
+
+import java.util.List;
 
 public class ModItems {
     //items
@@ -54,14 +58,22 @@ public class ModItems {
     //music disk
     public static final Item DAN_MUSIC_1_MUSIC_DISC = registerItem("dan_music_1_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAN_MUSIC_1_KEY).maxCount(1)));
     public static final Item DAN_MUSIC_2_MUSIC_DISC = registerItem("dan_music_2_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAN_MUSIC_2_KEY).maxCount(1)));
-    //
+    //seed
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new Item.Settings()));
 
+    public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
+    {
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.macrov2.cauliflower.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
 
     private static Item registerItem(String name, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(Macrov2.MOD_ID, name), item);
     }
-
     public static void registerModItems() {
         Macrov2.LOGGER.info("Registering Mod Items for " + Macrov2.MOD_ID);
 
@@ -85,7 +97,8 @@ public class ModItems {
             entries.add(PINK_GARNET_SHOVEL);
             entries.add(PINK_GARNET_HOE);
             entries.add(PINK_GARNET_SMITHING_TEMPLATE);
-
+            //crop
+            entries.add(CAULIFLOWER_SEEDS);
         });
     }
 }

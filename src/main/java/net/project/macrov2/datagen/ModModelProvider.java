@@ -7,6 +7,7 @@ import net.minecraft.item.AnimalArmorItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.project.macrov2.block.ModBlocks;
+import net.project.macrov2.block.custom.CauliflowerCropBlock;
 import net.project.macrov2.block.custom.PinkGarnetLampBlock;
 import net.project.macrov2.item.ModItems;
 
@@ -46,6 +47,8 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.LAMP_ON, lampOnIdentifier, lampOffIdentifier)));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
     @Override
@@ -56,7 +59,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GAUNTLET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUPER_COMPRESSED_STICK, Models.GENERATED);
-
+        //foods
+        itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOAST, Models.GENERATED);
 
         //don't need: itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);

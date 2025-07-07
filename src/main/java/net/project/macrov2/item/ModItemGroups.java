@@ -96,6 +96,9 @@ public class ModItemGroups {
                         //MUSIC DISK
                         entries.add(ModItems.DAN_MUSIC_1_MUSIC_DISC);
                         entries.add(ModItems.DAN_MUSIC_2_MUSIC_DISC);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.COMPRESSED_STICK);
+                        entries.add(ModItems.SUPER_COMPRESSED_STICK);
                     })
                     .build());
 

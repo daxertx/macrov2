@@ -3,6 +3,9 @@
   "item.macrov2.pink_garnet": "Pink garnet",
   "item.macrov2.raw_pink_garnet": "Raw pink garnet",
   "item.macrov2.gauntlet": "Gauntlet of a strong men",
+  "item.macrov2.cauliflower": "Cauliflower",
+  "item.macrov2.cauliflower_seeds": "Cauliflower seeds",
+
 
   "item.macrov2.chisel": "Block modifier",
   "item.macrov2.pink_garnet_hammer": "Very strong hammer",
@@ -17,7 +20,7 @@
   "item.macrov2.pink_garnet_axe": "Pink garnet axe",
   "item.macrov2.pink_garnet_shovel": "Pink garnet shovel",
   "item.macrov2.pink_garnet_hoe": "Pink garnet hoe",
-  "item.macrov2.kaupen_bow": "kaupen bow",
+  "item.macrov2.kaupen_bow": "Kaupen bow",
 
   "item.macrov2.pink_garnet_helmet": "Pink garnet helmet",
   "item.macrov2.pink_garnet_chestplate": "Pink garnet chestplate",
@@ -26,11 +29,12 @@
 
   "item.macrov2.pink_garnet_horse_armor": "Pink garnet horse armor",
 
-  "item.macrov2.dan_music_1_music_disc": "dan music 1",
-  "item.macrov2.dan_music_2_music_disc": "dan music 2",
+  "item.macrov2.dan_music_1_music_disc": "Dan music 1",
+  "item.macrov2.dan_music_2_music_disc": "Dan music 2",
   "item.macrov2.dan_music_1_music_disc.desc": "1",
   "item.macrov2.dan_music_2_music_disc.desc": "2",
 
+  "block.macrov2.cauliflower_crop": "Cauliflower crop",
   "block.macrov2.magic_block": "Magic Block",
   "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",
   "block.macrov2.pink_garnet_block": "Block of pink garnet",
@@ -64,6 +68,7 @@
   "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",
   "tooltip.macrov2.chisel.shift_down": "Change blocks to their brick version, could be reversed",
   "tooltip.macrov2.chisel": "Press §eShift§r to see more information",
+  "tooltip.macrov2.cauliflower.tooltip": "This is delicious!",
 
   "trim_pattern.macrov2.pink_garnet": "Pink garnet Material",
   "trim_material.macrov2.pink_garnet": "Pink garnet Material",
