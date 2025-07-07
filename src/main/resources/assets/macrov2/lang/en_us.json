@@ -37,11 +37,16 @@
 
   "block.macrov2.honey_berry_bush": "Honey berry bush",
   "block.macrov2.cauliflower_crop": "Cauliflower crop",
+
   "block.macrov2.magic_block": "Magic Block",
+
   "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",
   "block.macrov2.pink_garnet_block": "Block of pink garnet",
   "block.macrov2.pink_garnet_ore": "Pink garnet ore",
   "block.macrov2.pink_garnet_deepslate_ore": "Pink garnet deepslate ore",
+  "block.macrov2.pink_garnet_end_ore": "Pink garnet end ore",
+  "block.macrov2.pink_garnet_nether_ore": "Pink garnet nether ore",
+
 
   "block.macrov2.diddy_block": "Diddy block",
 

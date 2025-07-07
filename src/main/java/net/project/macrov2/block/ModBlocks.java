@@ -28,8 +28,16 @@ public class ModBlocks {
 
     public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore", new ExperienceDroppingBlock(UniformIntProvider.create(2,5), AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore", new ExperienceDroppingBlock(UniformIntProvider.create(3,6), AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
-//
-public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
+
+    public static final Block PINK_GARNET_END_ORE = registerBlock("pink_garnet_end_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(4, 8),
+                    AbstractBlock.Settings.create().strength(7f).requiresTool()));
+    public static final Block PINK_GARNET_NETHER_ORE = registerBlock("pink_garnet_nether_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 5),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool()));
+
+    //
+    public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
         new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
                 AbstractBlock.Settings.create().strength(2f).requiresTool()));
     public static final Block PINK_GARNET_SLAB = registerBlock("pink_garnet_slab",
@@ -101,10 +109,14 @@ public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs
 
             entries.add(PINK_GARNET_ORE);
             entries.add(PINK_GARNET_DEEPSLATE_ORE);
+            //entries.add(ModBlocks.PINK_GARNET_NETHER_ORE);
+            //entries.add(ModBlocks.PINK_GARNET_END_ORE);
 
             entries.add(ModBlocks.MAGIC_BLOCK);
 
             entries.add(ModBlocks.DIDDY_BLOCK);
+
+
         });
 
     }

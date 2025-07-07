@@ -1,20 +1,53 @@
 package net.project.macrov2.world;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.project.macrov2.Macrov2;
+import net.project.macrov2.block.ModBlocks;
+
+import java.util.List;
 
 public class ModConfiguredFeatures
 {
     //config feature ->place feature - >world gen
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registerKey("pink_garnet_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_PINK_GARNET_ORE_KEY = registerKey("nether_pink_garnet_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> END_PINK_GARNET_ORE_KEY = registerKey("end_pink_garnet_ore");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context)
     {
         //can register anything I want this why there is <?, ?>
+        RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest netherReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
+        RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
+
+        //overworld ore
+        List<OreFeatureConfig.Target> overworldPinkGarnetOres
+        = List.of(
+        OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.PINK_GARNET_ORE.getDefaultState()),
+        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.PINK_GARNET_DEEPSLATE_ORE.getDefaultState()));
+        //nether ore
+        List<OreFeatureConfig.Target> netherPinkGarnetOres
+                = List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.PINK_GARNET_NETHER_ORE.getDefaultState()));
+        //end ore
+        List<OreFeatureConfig.Target> endPinkGarnetOres
+                = List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.PINK_GARNET_END_ORE.getDefaultState()));
+        //
+        //size is vein size
+        register(context,PINK_GARNET_ORE_KEY,Feature.ORE,new OreFeatureConfig(overworldPinkGarnetOres,8,0.1f));
+        register(context,NETHER_PINK_GARNET_ORE_KEY,Feature.ORE,new OreFeatureConfig(netherPinkGarnetOres,8,0.1f));
+        register(context,END_PINK_GARNET_ORE_KEY,Feature.ORE,new OreFeatureConfig(endPinkGarnetOres,10,0.1f));
 
     }
 
