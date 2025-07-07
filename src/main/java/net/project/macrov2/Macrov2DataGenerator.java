@@ -9,6 +9,8 @@ import net.project.macrov2.enchantment.ModEnchantmentEffect;
 import net.project.macrov2.enchantment.ModEnchantments;
 import net.project.macrov2.trim.ModTrimMaterials;
 import net.project.macrov2.trim.ModTrimPatterns;
+import net.project.macrov2.world.ModConfiguredFeatures;
+import net.project.macrov2.world.ModPlacedFeatures;
 
 public class Macrov2DataGenerator implements DataGeneratorEntrypoint
 {
@@ -30,6 +32,10 @@ public class Macrov2DataGenerator implements DataGeneratorEntrypoint
 	{
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
+
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

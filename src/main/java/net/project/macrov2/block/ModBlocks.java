@@ -12,8 +12,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.project.macrov2.Macrov2;
 import net.project.macrov2.block.custom.CauliflowerCropBlock;
+import net.project.macrov2.block.custom.HoneyBerryBushBlock;
 import net.project.macrov2.block.custom.MagicBlock;
 import net.project.macrov2.block.custom.PinkGarnetLampBlock;
+import net.project.macrov2.item.ModItems;
 import net.project.macrov2.sounds.ModSounds;
 
 public class ModBlocks {
@@ -68,7 +70,9 @@ public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs
                     )));
     //crop
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
-
+    //bush
+    //same settings as a sweet berry bush
+    public static final Block HONEY_BERRY_BUSH = registerBlockWithoutBlockItem("honey_berry_bush",new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block)
     {

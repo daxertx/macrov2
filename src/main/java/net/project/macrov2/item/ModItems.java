@@ -60,6 +60,8 @@ public class ModItems {
     public static final Item DAN_MUSIC_2_MUSIC_DISC = registerItem("dan_music_2_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAN_MUSIC_2_KEY).maxCount(1)));
     //seed
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new Item.Settings()));
+    //berry
+    public static final Item HONEY_BERRIES = registerItem("honey_berries", new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH,new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     {

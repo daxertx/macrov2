@@ -5,6 +5,7 @@
   "item.macrov2.gauntlet": "Gauntlet of a strong men",
   "item.macrov2.cauliflower": "Cauliflower",
   "item.macrov2.cauliflower_seeds": "Cauliflower seeds",
+  "item.macrov2.honey_berries": "Honey berries",
 
 
   "item.macrov2.chisel": "Block modifier",
@@ -34,6 +35,7 @@
   "item.macrov2.dan_music_1_music_disc.desc": "1",
   "item.macrov2.dan_music_2_music_disc.desc": "2",
 
+  "block.macrov2.honey_berry_bush": "Honey berry bush",
   "block.macrov2.cauliflower_crop": "Cauliflower crop",
   "block.macrov2.magic_block": "Magic Block",
   "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",

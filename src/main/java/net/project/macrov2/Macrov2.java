@@ -31,6 +31,7 @@ import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.potion.ModPotions;
 import net.project.macrov2.sounds.ModSounds;
 import net.project.macrov2.util.HammerUsageEvent;
+import net.project.macrov2.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -55,9 +56,13 @@ public class Macrov2 implements ModInitializer {
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
 		ModSounds.registerSounds();
+
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+
 		ModEnchantmentEffect.registerEnchantmentEffect();
+
+		ModWorldGeneration.generateModWorldGen();
 		//brewing
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder ->
 		{
@@ -67,11 +72,7 @@ public class Macrov2 implements ModInitializer {
 		//compost
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER,0.5f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS,0.25f);
-
-
-
-
-
+		CompostingChanceRegistry.INSTANCE.add(ModItems.HONEY_BERRIES,0.25f);
 
 
 

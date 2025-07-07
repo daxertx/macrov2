@@ -8,6 +8,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.block.custom.CauliflowerCropBlock;
+import net.project.macrov2.block.custom.HoneyBerryBushBlock;
 import net.project.macrov2.block.custom.PinkGarnetLampBlock;
 import net.project.macrov2.item.ModItems;
 
@@ -47,8 +48,10 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.LAMP_ON, lampOnIdentifier, lampOffIdentifier)));
-
+        //crop
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        //bush
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.HONEY_BERRY_BUSH,BlockStateModelGenerator.TintType.NOT_TINTED, HoneyBerryBushBlock.AGE,0,1,2,3);
     }
 
     @Override
