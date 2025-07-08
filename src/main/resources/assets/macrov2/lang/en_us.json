@@ -65,6 +65,15 @@
 
   "block.macrov2.pink_garnet_lamp": "Pink garnet lamp",
 
+
+  "block.macrov2.driftwood_log": "Driftwood log",
+  "block.macrov2.driftwood_wood": "Driftwood wood",
+  "block.macrov2.stripped_driftwood_log": "Stripped driftwood log",
+  "block.macrov2.stripped_driftwood_wood": "Stripped driftwood wood",
+  "block.macrov2.driftwood_planks": "Driftwood planks",
+  "block.macrov2.driftwood_leaves": "Driftwood leaves",
+  "block.macrov2.driftwood_sapling": "Driftwood sapling",
+
   "itemgroup.macrov2.pink_garnet_items": "Modded items",
   "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
   "itemgroup.macrov2.gears":"Modded gear",

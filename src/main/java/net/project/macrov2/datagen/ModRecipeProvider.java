@@ -249,6 +249,29 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 //UNLOCK RECIPE CONDITIONS
                 .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter);
+        //tree
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS,ModBlocks.DRIFTWOOD_PLANKS, 4)
+                .input(ModBlocks.DRIFTWOOD_LOG)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_LOG), conditionsFromItem(ModBlocks.DRIFTWOOD_LOG))
+                .offerTo(exporter, "driftwood_planks_from_driftwood_log");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_WOOD,3)
+                .pattern("PP")
+                .pattern("PP")
+                .input('P', ModBlocks.DRIFTWOOD_LOG)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_LOG),conditionsFromItem(ModBlocks.DRIFTWOOD_LOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DRIFTWOOD_WOOD,3)
+                .pattern("PP")
+                .pattern("PP")
+                .input('P', ModBlocks.STRIPPED_DRIFTWOOD_LOG)
+                //UNLOCK RECIPE CONDITIONS
+                .criterion(hasItem(ModBlocks.STRIPPED_DRIFTWOOD_LOG),conditionsFromItem(ModBlocks.STRIPPED_DRIFTWOOD_LOG))
+
+                .offerTo(exporter);
+        //
         offerSmithingTrimRecipe(exporter,ModItems.PINK_GARNET_SMITHING_TEMPLATE, Identifier.of(Macrov2.MOD_ID,"pink_garnet_smithing_template"));
     }
 }

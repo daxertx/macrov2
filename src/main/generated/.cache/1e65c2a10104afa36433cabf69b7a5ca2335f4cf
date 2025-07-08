@@ -1,10 +1,12 @@
-// 1.21	2025-07-07T17:25:52.8336258	macro_v2/Tags for minecraft:item
+// 1.21	2025-07-08T16:25:16.0834675	macro_v2/Tags for minecraft:item
 3ad32f7e677cd4746dbe35e9472947e09c4f5f5f data\minecraft\tags\item\pickaxes.json
 b2bfdcb9c42eba0ecd8e099fa001b79999eeb633 data\minecraft\tags\item\shovels.json
 c60d97069b8917717d2d918f219157db0fad9805 data\minecraft\tags\item\trim_materials.json
 1b95d5634eca4cd61d49166741ef58ddffa80a8a data\minecraft\tags\item\hoes.json
 804d640728fe8ee1033f7d13364bda285d347a49 data\macrov2\tags\item\tramsformable_item.json
+ffc51a989ffaca1f46ece839abcb6a537e43aa89 data\minecraft\tags\item\logs_that_burn.json
 2f0e99704dd1846e15d4958e67a72651e458a038 data\minecraft\tags\item\swords.json
 9b6f9e9dbb5fe9e05953500e92466f28c8fe8a19 data\minecraft\tags\item\trimmable_armor.json
+179d9275fc6a84aed292d8089ef3c88d128d97d0 data\minecraft\tags\item\planks.json
 489a56f7350ce55592064e53c405fc579d8cfa5a data\minecraft\tags\item\axes.json
 8c34b4ba517e9bec90dfbaca2cb9f9977a42e028 data\minecraft\tags\item\trim_templates.json
