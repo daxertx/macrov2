@@ -6,13 +6,11 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.PlacedFeature;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import net.project.macrov2.Macrov2;
+import net.project.macrov2.block.ModBlocks;
 
 import java.util.List;
 
@@ -23,12 +21,17 @@ public class ModPlacedFeatures
     public static final RegistryKey<PlacedFeature> NETHER_PINK_GARNET_ORE_PLACED_KEY = registerKey("nether_pink_garnet_ore_placed");
     public static final RegistryKey<PlacedFeature> END_PINK_GARNET_ORE_PLACED_KEY = registerKey("end_pink_garnet_ore_placed");
 
+    public static final RegistryKey<PlacedFeature> DRIFTWOOD_PLACED_KEY = registerKey("driftwood_placed");
+
     public static void bootstrap(Registerable<PlacedFeature> context)
     {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         //uniform 80 TO -80 can spawn
         //trapezoid closer to 80 or -80 have more chance to get more pink garnet than farther away
+
+
+        //ores:
 
         //overworld
         register(context,PINK_GARNET_ORE_PLACED_KEY,configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_GARNET_ORE_KEY),
@@ -42,7 +45,14 @@ public class ModPlacedFeatures
         register(context,END_PINK_GARNET_ORE_PLACED_KEY,configuredFeatures.getOrThrow(ModConfiguredFeatures.END_PINK_GARNET_ORE_KEY),
                 //veins per chunk is count
                 ModOrePlacement.modifiersWithCount(14, HeightRangePlacementModifier.uniform(YOffset.fixed(-80),YOffset.fixed(80))));
-
+        //
+        //tree:
+        //treeModifiersWithWouldSurvive means the tree can be placed where the block we pick can be placed cant stone but can dirt
+        register(context,DRIFTWOOD_PLACED_KEY,configuredFeatures.getOrThrow(ModConfiguredFeatures.DRIFTWOOD_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier
+                        (2,0.1f,2), ModBlocks.DRIFTWOOD_SAPLING));
+        //
+        
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

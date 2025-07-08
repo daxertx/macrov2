@@ -4,6 +4,9 @@ public class ModWorldGeneration
 {
     public static void generateModWorldGen()
     {
+        //DOWN y lvl
         ModOreGeneration.generateOres();
+        ModTreeGeneration.generateTrees();
+        //UP y lvl
     }
 }
