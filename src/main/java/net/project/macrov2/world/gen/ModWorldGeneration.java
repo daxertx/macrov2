@@ -6,7 +6,10 @@ public class ModWorldGeneration
     {
         //DOWN y lvl
         ModOreGeneration.generateOres();
+
         ModTreeGeneration.generateTrees();
+
+        ModBushGeneration.generateBushes();
         //UP y lvl
     }
 }

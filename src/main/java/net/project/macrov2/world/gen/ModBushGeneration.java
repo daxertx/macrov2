@@ -6,11 +6,12 @@ import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.project.macrov2.world.ModPlacedFeatures;
 
-public class ModTreeGeneration
+public class ModBushGeneration
 {
-    public static void generateTrees()
+    public static void generateBushes()
     {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.DRIFTWOOD_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HONEY_BERRY_BUSH_PLACED_KEY);
     }
+
 }

@@ -1,6 +1,8 @@
 package net.project.macrov2.world;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -24,12 +26,14 @@ import java.util.List;
 public class ModConfiguredFeatures
 {
     //config feature ->place feature - >world gen
-
+    //ore
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registerKey("pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_PINK_GARNET_ORE_KEY = registerKey("nether_pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_PINK_GARNET_ORE_KEY = registerKey("end_pink_garnet_ore");
-
+    //tree
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
+    //bush
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HONEY_BERRY_BUSH_KEY = registerKey("honey_berry_bush");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context)
@@ -66,7 +70,15 @@ public class ModConfiguredFeatures
                 BlockStateProvider.of(ModBlocks.DRIFTWOOD_LEAVES),//what block is the leaves of tree
                 new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.SAND)).build());
+
+        //bush copied from minecraft code
+        register(context,HONEY_BERRY_BUSH_KEY,Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HONEY_BERRY_BUSH
+                                .getDefaultState().with(SweetBerryBushBlock.AGE, 3))),
+                        List.of(Blocks.GRASS_BLOCK)));
+        //
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name)
