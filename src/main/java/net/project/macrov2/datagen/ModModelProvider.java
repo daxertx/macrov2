@@ -72,6 +72,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
 
+
         itemModelGenerator.register(ModItems.GAUNTLET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMPRESSED_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUPER_COMPRESSED_STICK, Models.GENERATED);

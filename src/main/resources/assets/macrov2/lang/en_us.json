@@ -10,6 +10,8 @@
 
   "item.macrov2.chisel": "Block modifier",
   "item.macrov2.pink_garnet_hammer": "Very strong hammer",
+  "item.macrov2.tomahawk": "Tomahawk",
+
 
   "item.macrov2.compressed_stick": "Compressed stick",
   "item.macrov2.super_compressed_stick": "Super compressed stick",
@@ -120,5 +122,6 @@
   "enchantment.macrov2.poisen_striker": "Poisen striker",
   "enchantment.macrov2.mining_fatigue": "Mining fatigue",
 
-  "entity.macrov2.mantis": "Mantis"
+  "entity.macrov2.mantis": "Mantis",
+  "entity.macrov2.tomahawk": "Tomahawk"
 }

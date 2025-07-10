@@ -10,6 +10,8 @@ import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.entity.client.MantisModel;
 import net.project.macrov2.entity.client.MantisRenderer;
+import net.project.macrov2.entity.client.TomahawkProjectileModel;
+import net.project.macrov2.entity.client.TomahawkProjectileRenderer;
 import net.project.macrov2.util.ModModelPredicates;
 
 import javax.swing.*;
@@ -30,6 +32,9 @@ public class Macrov2Client implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
 
         ModModelPredicates.registerModelPredicates();
+
+        EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK,TomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
 
     }
 }

@@ -16,6 +16,7 @@ import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.item.custom.ChiselItem;
 import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.item.custom.ModArmorItem;
+import net.project.macrov2.item.custom.TomahawkItem;
 import net.project.macrov2.sounds.ModSounds;
 
 
@@ -26,6 +27,7 @@ public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
     public static final Item GAUNTLET = registerItem("gauntlet", new Item(new Item.Settings()));
+    //
     //
     //foods
     public static final Item TOAST = registerItem("toast", new Item(new Item.Settings().food(ModFoodComponents.TOAST)));
@@ -65,7 +67,8 @@ public class ModItems {
     public static final Item HONEY_BERRIES = registerItem("honey_berries", new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH,new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
     //spawn egg
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg", new SpawnEggItem(ModEntities.MANTIS,0x3fc35,0x04f10,new Item.Settings()));
-
+    //advanced rightable item
+    public static final Item TOMAHAWK = registerItem("tomahawk",new TomahawkItem(new Item.Settings().maxCount(16)));
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     {
         @Override
@@ -89,7 +92,8 @@ public class ModItems {
             entries.add(PINK_GARNET);
             entries.add(RAW_PINK_GARNET);
             entries.add(GAUNTLET);
-
+            entries.add(TOMAHAWK);
+            entries.add(BULLET);
             //foods:
             entries.add(TOAST);
             //fuels:

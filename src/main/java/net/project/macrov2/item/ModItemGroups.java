@@ -84,6 +84,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         //tools:
+                        entries.add(ModItems.TOMAHAWK);
                         entries.add(ModItems.PINK_GARNET_SWORD);
                         entries.add(ModItems.PINK_GARNET_PICKAXE);
                         entries.add(ModItems.PINK_GARNET_AXE);
@@ -91,6 +92,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_HOE);
                         entries.add(ModItems.PINK_GARNET_HAMMER);
                         entries.add(ModItems.KAUPEN_BOW);
+                        entries.add(ModItems.BULLET);
 
                         entries.add(ModItems.PINK_GARNET_HELMET);
                         entries.add(ModItems.PINK_GARNET_CHESTPLATE);
