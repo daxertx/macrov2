@@ -113,6 +113,7 @@ public class ModItemGroups {
                         entries.add(ModItems.HONEY_BERRIES);
                         entries.add(ModItems.COMPRESSED_STICK);
                         entries.add(ModItems.SUPER_COMPRESSED_STICK);
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
                     })
                     .build());
 

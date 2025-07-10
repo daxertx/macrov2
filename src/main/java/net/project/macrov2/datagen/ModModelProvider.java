@@ -12,6 +12,8 @@ import net.project.macrov2.block.custom.HoneyBerryBushBlock;
 import net.project.macrov2.block.custom.PinkGarnetLampBlock;
 import net.project.macrov2.item.ModItems;
 
+import java.util.Optional;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -99,7 +101,9 @@ public class ModModelProvider extends FabricModelProvider {
         //MUSIC DISK
         itemModelGenerator.register(ModItems.DAN_MUSIC_1_MUSIC_DISC,Models.GENERATED);
         itemModelGenerator.register(ModItems.DAN_MUSIC_2_MUSIC_DISC,Models.GENERATED);
-        //tree
+        //tree sapling
         itemModelGenerator.register(ModBlocks.DRIFTWOOD_SAPLING.asItem(), Models.GENERATED);
+        //spawn egg
+        itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,new Model(Optional.of(Identifier.of("item/template_spawn_egg")),Optional.empty()));
     }
 }

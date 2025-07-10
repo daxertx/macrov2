@@ -2,8 +2,14 @@ package net.project.macrov2;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.project.macrov2.block.ModBlocks;
+import net.project.macrov2.entity.ModEntities;
+import net.project.macrov2.entity.client.MantisModel;
+import net.project.macrov2.entity.client.MantisRenderer;
 import net.project.macrov2.util.ModModelPredicates;
 
 import javax.swing.*;
@@ -20,6 +26,8 @@ public class Macrov2Client implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRIFTWOOD_SAPLING, RenderLayer.getCutout());
 
+        EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS,MantisModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
 
         ModModelPredicates.registerModelPredicates();
 

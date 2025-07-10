@@ -3,6 +3,7 @@ package net.project.macrov2;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
@@ -26,6 +27,8 @@ import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.component.ModDataComponentTypes;
 import net.project.macrov2.effect.ModEffects;
 import net.project.macrov2.enchantment.ModEnchantmentEffect;
+import net.project.macrov2.entity.ModEntities;
+import net.project.macrov2.entity.custom.MantisEntity;
 import net.project.macrov2.item.ModItemGroups;
 import net.project.macrov2.item.ModItems;
 import net.project.macrov2.item.custom.HammerItem;
@@ -63,7 +66,12 @@ public class Macrov2 implements ModInitializer {
 
 		ModEnchantmentEffect.registerEnchantmentEffect();
 
+		ModEntities.registerModEntities();
+
 		ModWorldGeneration.generateModWorldGen();
+
+
+
 		//brewing
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder ->
 		{
@@ -109,5 +117,9 @@ public class Macrov2 implements ModInitializer {
 			return ActionResult.PASS;
 		});
 
+
+		//
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }

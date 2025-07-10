@@ -12,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.project.macrov2.block.ModBlocks;
+import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.item.custom.ChiselItem;
 import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.item.custom.ModArmorItem;
@@ -62,6 +63,8 @@ public class ModItems {
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP,new Item.Settings()));
     //berry
     public static final Item HONEY_BERRIES = registerItem("honey_berries", new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH,new Item.Settings().food(ModFoodComponents.HONEY_BERRY)));
+    //spawn egg
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg", new SpawnEggItem(ModEntities.MANTIS,0x3fc35,0x04f10,new Item.Settings()));
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     {
@@ -101,6 +104,8 @@ public class ModItems {
             entries.add(PINK_GARNET_SMITHING_TEMPLATE);
             //crop
             entries.add(CAULIFLOWER_SEEDS);
+            //spawm egg
+            entries.add(MANTIS_SPAWN_EGG);
         });
     }
 }

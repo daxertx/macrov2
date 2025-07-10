@@ -1,0 +1,23 @@
+package net.project.macrov2.entity;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.util.Identifier;
+import net.project.macrov2.Macrov2;
+import net.project.macrov2.entity.custom.MantisEntity;
+
+public class ModEntities
+{
+
+    public static final EntityType<MantisEntity> MANTIS = Registry.register(Registries.ENTITY_TYPE,Identifier.of("mantis"),EntityType.Builder.create(MantisEntity::new, SpawnGroup.CREATURE).dimensions(1.5f,2.5f).build());
+
+    public static void registerModEntities()
+    {
+        Macrov2.LOGGER.info("registering mod entities for "+Macrov2.MOD_ID);
+    }
+
+}

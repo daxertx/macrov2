@@ -34,6 +34,8 @@
   "item.macrov2.dan_music_2_music_disc": "Dan music 2",
   "item.macrov2.dan_music_1_music_disc.desc": "1",
   "item.macrov2.dan_music_2_music_disc.desc": "2",
+  "item.macrov2.mantis_spawn_egg": "Mantis spawn egg",
+
 
   "block.macrov2.honey_berry_bush": "Honey berry bush",
   "block.macrov2.cauliflower_crop": "Cauliflower crop",
@@ -116,5 +118,7 @@
   "enchantment.macrov2.lightning_striker": "Lightning striker",
   "enchantment.macrov2.freeze_striker": "Freeze striker",
   "enchantment.macrov2.poisen_striker": "Poisen striker",
-  "enchantment.macrov2.mining_fatigue": "Mining fatigue"
+  "enchantment.macrov2.mining_fatigue": "Mining fatigue",
+
+  "entity.macrov2.mantis": "Mantis"
 }
