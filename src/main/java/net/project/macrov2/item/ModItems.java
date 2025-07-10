@@ -93,7 +93,6 @@ public class ModItems {
             entries.add(RAW_PINK_GARNET);
             entries.add(GAUNTLET);
             entries.add(TOMAHAWK);
-            entries.add(BULLET);
             //foods:
             entries.add(TOAST);
             //fuels:
