@@ -9,6 +9,8 @@ import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.boss.BossBar;
+import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
@@ -21,9 +23,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.Util;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
@@ -33,12 +37,17 @@ import net.project.macrov2.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 import org.lwjgl.system.SharedLibrary;
 
+import java.awt.*;
+
 public class MantisEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
-
+    //boss bar
+    public static final ServerBossBar bossBar = new ServerBossBar(Text.literal("Mantis health"), BossBar.Color.RED, BossBar.Style.NOTCHED_12);
+    //
     private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
             DataTracker.registerData(MantisEntity.class, TrackedDataHandlerRegistry.INTEGER);
+
 
     public MantisEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -153,5 +162,27 @@ public class MantisEntity extends AnimalEntity {
     @Override
     protected @Nullable SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_EVOKER_DEATH;
+    }
+
+    //boss bar
+
+
+    @Override
+    public void onStartedTrackingBy(ServerPlayerEntity player) {
+        super.onStartedTrackingBy(player);
+        this.bossBar.addPlayer(player);
+    }
+
+    @Override
+    public void onStoppedTrackingBy(ServerPlayerEntity player) {
+        super.onStoppedTrackingBy(player);
+        this.bossBar.removePlayer(player);
+    }
+
+    @Override
+    protected void mobTick()
+    {
+        //calculating % of health
+        this.bossBar.setPercent(this.getHealth()/this.getMaxHealth());
     }
 }
