@@ -86,6 +86,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         //tools:
+                        entries.add(ModItems.SPECTRE_STAFF);
                         entries.add(ModItems.TOMAHAWK);
                         entries.add(ModItems.PINK_GARNET_SWORD);
                         entries.add(ModItems.PINK_GARNET_PICKAXE);

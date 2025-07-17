@@ -69,6 +69,10 @@ public class ModItems {
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg", new SpawnEggItem(ModEntities.MANTIS,0x3fc35,0x04f10,new Item.Settings()));
     //advanced rightable item
     public static final Item TOMAHAWK = registerItem("tomahawk",new TomahawkItem(new Item.Settings().maxCount(16)));
+
+    public static final Item SPECTRE_STAFF = registerItem("spectre_staff",new Item(new Item.Settings().maxCount(1)));
+
+
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     {
         @Override
@@ -102,13 +106,15 @@ public class ModItems {
             entries.add(PINK_GARNET_SWORD);
             entries.add(PINK_GARNET_PICKAXE);
             entries.add(PINK_GARNET_AXE);
-            entries.add(PINK_GARNET_SHOVEL);
+                entries.add(PINK_GARNET_SHOVEL);
             entries.add(PINK_GARNET_HOE);
             entries.add(PINK_GARNET_SMITHING_TEMPLATE);
             //crop
             entries.add(CAULIFLOWER_SEEDS);
             //spawm egg
             entries.add(MANTIS_SPAWN_EGG);
+            //
+            entries.add(SPECTRE_STAFF);
         });
     }
 }
