@@ -10,7 +10,7 @@ public class ModTreeGeneration
 {
     public static void generateTrees()
     {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH,BiomeKeys.PLAINS),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.DRIFTWOOD_PLACED_KEY);
     }
 }
