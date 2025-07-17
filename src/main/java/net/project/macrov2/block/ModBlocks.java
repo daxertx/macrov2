@@ -60,11 +60,7 @@ public class ModBlocks {
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
 
 
-
-
-
-    //blocks code ends
-
+    //
     public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",new PinkGarnetLampBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().luminance
@@ -91,6 +87,8 @@ public class ModBlocks {
 
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",new SaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
+    //
+     public static final Block CHAIR = registerBlock("chair",new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
     //
     private static Block registerBlockWithoutBlockItem(String name, Block block)
     {
@@ -123,6 +121,7 @@ public class ModBlocks {
             //entries.add(ModBlocks.PINK_GARNET_END_ORE);
 
             entries.add(ModBlocks.MAGIC_BLOCK);
+            entries.add(ModBlocks.CHAIR);
 
             entries.add(ModBlocks.DIDDY_BLOCK);
 

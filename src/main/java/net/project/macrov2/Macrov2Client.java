@@ -8,10 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.entity.ModEntities;
-import net.project.macrov2.entity.client.MantisModel;
-import net.project.macrov2.entity.client.MantisRenderer;
-import net.project.macrov2.entity.client.TomahawkProjectileModel;
-import net.project.macrov2.entity.client.TomahawkProjectileRenderer;
+import net.project.macrov2.entity.client.*;
 import net.project.macrov2.util.ModModelPredicates;
 
 import javax.swing.*;
@@ -28,6 +25,9 @@ public class Macrov2Client implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRIFTWOOD_SAPLING, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CHAIR, RenderLayer.getCutout());
+
+
         EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS,MantisModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
 
@@ -35,6 +35,9 @@ public class Macrov2Client implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK,TomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
+
 
     }
 }

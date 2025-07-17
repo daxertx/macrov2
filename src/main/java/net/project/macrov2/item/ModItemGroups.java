@@ -45,6 +45,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         //adds items to item group
+                        entries.add(ModBlocks.CHAIR);
+
                         entries.add(ModBlocks.MAGIC_BLOCK);
 
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);

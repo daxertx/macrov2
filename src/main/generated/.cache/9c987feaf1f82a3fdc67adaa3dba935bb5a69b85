@@ -1,4 +1,4 @@
-// 1.21	2025-07-11T12:01:38.9387763	macro_v2/Block Loot Tables
+// 1.21	2025-07-17T16:18:05.388269	macro_v2/Block Loot Tables
 c473cad490b84f499e14f0ad5c89b43ceeb8c6ec data\macrov2\loot_table\blocks\honey_berry_bush.json
 9a54d3bdaeca88c59324a0e348301a78abbd3a56 data\macrov2\loot_table\blocks\raw_pink_garnet_block.json
 364cb8c1752a6f102ceaf2d1bdb2d07abc747588 data\macrov2\loot_table\blocks\pink_garnet_slab.json
@@ -11,8 +11,8 @@ df0dfc2021e12023fb4b5fe60fdbb1268c4eee3f data\macrov2\loot_table\blocks\pink_gar
 c198aa12b0ff3c161f5b29f32dfa1c90d5773f9f data\macrov2\loot_table\blocks\driftwood_sapling.json
 6d40068ccb46c3b2968119f1c3ae37e629e857af data\macrov2\loot_table\blocks\pink_garnet_end_ore.json
 cf8961227d8606431b60e75453a2f2b14ecf00f9 data\macrov2\loot_table\blocks\pink_garnet_fence.json
-ba2284b64471449414fc410295c9c63d6a66f122 data\macrov2\loot_table\blocks\stripped_driftwood_log.json
 691ac1bec464a0f8090a616d6987919a913e0838 data\macrov2\loot_table\blocks\driftwood_log.json
+ba2284b64471449414fc410295c9c63d6a66f122 data\macrov2\loot_table\blocks\stripped_driftwood_log.json
 2b8276eb66482a8fbe0d2b73eede387042db4f0a data\macrov2\loot_table\blocks\pink_garnet_pressure_plate.json
 654c62f518ab855e1ef379d68cceb293ef89790e data\macrov2\loot_table\blocks\cauliflower_crop.json
 b4fdd8f33119e8db8b0f51ae6ee26f93d1137684 data\macrov2\loot_table\blocks\driftwood_wood.json
