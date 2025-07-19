@@ -28,6 +28,7 @@ import net.project.macrov2.particle.ModParticles;
 import net.project.macrov2.potion.ModPotions;
 import net.project.macrov2.sounds.ModSounds;
 import net.project.macrov2.util.HammerUsageEvent;
+import net.project.macrov2.util.ModLootTableModifiers;
 import net.project.macrov2.villager.ModVillagers;
 import net.project.macrov2.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
@@ -40,7 +41,9 @@ public class Macrov2 implements ModInitializer
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize() {
+	public void onInitialize()
+	{
+		//registering
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
@@ -48,19 +51,10 @@ public class Macrov2 implements ModInitializer
 
 		ModDataComponentTypes.registerDataComponentType();
 
-		ModVillagers.registerVillagers();
-
-		ModParticles.registerParticles();
-		//fuels
-		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
-		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
-
-
-		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
-
 		ModSounds.registerSounds();
 
 		ModEffects.registerEffects();
+
 		ModPotions.registerPotions();
 
 		ModEnchantmentEffect.registerEnchantmentEffect();
@@ -68,6 +62,20 @@ public class Macrov2 implements ModInitializer
 		ModEntities.registerModEntities();
 
 		ModWorldGeneration.generateModWorldGen();
+
+
+		ModVillagers.registerVillagers();
+
+		ModParticles.registerParticles();
+
+		ModLootTableModifiers.modifyLootTables();
+		//fuels
+		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
+		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
+		//
+ 		//hammer used
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+		//
 
 
 
@@ -82,7 +90,7 @@ public class Macrov2 implements ModInitializer
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS,0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.HONEY_BERRIES,0.25f);
 
-		//can be right clicked with axe
+		//can be right-clicked with axe
 		StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_LOG,ModBlocks.STRIPPED_DRIFTWOOD_LOG);
 		StrippableBlockRegistry.register(ModBlocks.DRIFTWOOD_WOOD,ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
 		//CAN SET ON FIRE
@@ -163,5 +171,6 @@ public class Macrov2 implements ModInitializer
 					new TradedItem(Items.EMERALD,3),
 					new ItemStack(ModItems.TOAST,2),99,7,0.01f)));
 		});
+		//
 	}
 }

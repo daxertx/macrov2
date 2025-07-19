@@ -63,7 +63,7 @@ public class GunItem extends Item {
         // Length of the line
         double maxDistance = 10.0;
         // Distance between each particle
-        double step = 0.5;
+        double step = 1;
 
         // Spawn a line of particles
         for (double d = 0; d < maxDistance; d += step) {
@@ -82,7 +82,7 @@ public class GunItem extends Item {
                 //loop tracks all entity by 10 10 blocks from user
                 if (target.isAlive() && target != user && target.getBoundingBox().expand(0.3).contains(particlePos))
                 {
-                    target.damage(user.getDamageSources().playerAttack(user), 8.0f);
+                    target.damage(user.getDamageSources().playerAttack(user), 12.0f);
                     world.playSound(null, particlePos.x, particlePos.y, particlePos.z, SoundEvents.ENTITY_ARROW_HIT_PLAYER, SoundCategory.PLAYERS, 1.0f, 1.0f);
                     return;
                 }

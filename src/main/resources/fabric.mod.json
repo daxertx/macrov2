@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "macrov2",
 	"version": "${version}",
-	"name": "macro_v2",
-	"description": "new blocks&",
+	"name": "macrov2",
+	"description": "new blocks items gun entities and much more",
 	"authors": [
-		"dan and ori"
+		"dan"
 	],
 	"contact": {
 		"homepage": "",
