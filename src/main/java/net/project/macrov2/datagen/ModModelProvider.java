@@ -109,5 +109,10 @@ public class ModModelProvider extends FabricModelProvider {
         //spawn egg
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,new Model(Optional.of(Identifier.of("item/template_spawn_egg")),Optional.empty()));
 
+        //
+        itemModelGenerator.register(ModItems.SHOTGUN, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GUN, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AMMO, Models.HANDHELD);
+
     }
 }

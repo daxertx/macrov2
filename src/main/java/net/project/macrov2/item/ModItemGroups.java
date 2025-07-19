@@ -86,6 +86,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) ->
                     {
                         //tools:
+                        entries.add(ModItems.GUN);
+                        entries.add(ModItems.SHOTGUN);
+                        entries.add(ModItems.AMMO);
                         entries.add(ModItems.SPECTRE_STAFF);
                         entries.add(ModItems.TOMAHAWK);
                         entries.add(ModItems.PINK_GARNET_SWORD);

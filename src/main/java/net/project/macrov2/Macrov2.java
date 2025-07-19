@@ -1,33 +1,21 @@
 package net.project.macrov2;
 
-import com.ibm.icu.impl.ICUService;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.*;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FireBlock;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
-import net.minecraft.entity.projectile.thrown.PotionEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradedItem;
-import net.minecraft.village.VillagerProfession;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.component.ModDataComponentTypes;
 import net.project.macrov2.effect.ModEffects;
@@ -36,7 +24,6 @@ import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.entity.custom.MantisEntity;
 import net.project.macrov2.item.ModItemGroups;
 import net.project.macrov2.item.ModItems;
-import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.potion.ModPotions;
 import net.project.macrov2.sounds.ModSounds;
 import net.project.macrov2.util.HammerUsageEvent;
@@ -46,7 +33,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 // Very important comment
-public class Macrov2 implements ModInitializer {
+public class Macrov2 implements ModInitializer
+{
 	public static final String MOD_ID ="macrov2";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 

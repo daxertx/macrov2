@@ -128,5 +128,9 @@
 
   "entity.macrov2.mantis": "Mantis",
   "entity.macrov2.tomahawk": "Tomahawk",
-  "entity.minecraft.villager.kaupenger": "Kaupenger"
+  "entity.minecraft.villager.kaupenger": "Kaupenger",
+
+  "item.macrov2.gun": "AK47",
+  "item.macrov2.shotgun": "Shotgun",
+  "item.macrov2.ammo": "ammo"
 }

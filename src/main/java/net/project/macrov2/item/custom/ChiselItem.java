@@ -10,6 +10,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.particle.BlockStateParticleEffect;
+import net.minecraft.particle.ParticleType;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -84,6 +87,11 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null,context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
+
+                ((ServerWorld) world).spawnParticles(new BlockStateParticleEffect(ParticleTypes.BLOCK,clickedblock.getDefaultState()),
+                        context.getBlockPos().getX()+0.5,context.getBlockPos().getY()+0.5,context.getBlockPos().getZ()+0.5
+                        ,5,0,0,0,1);
+
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }

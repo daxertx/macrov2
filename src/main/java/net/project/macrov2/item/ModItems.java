@@ -13,10 +13,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.entity.ModEntities;
-import net.project.macrov2.item.custom.ChiselItem;
-import net.project.macrov2.item.custom.HammerItem;
-import net.project.macrov2.item.custom.ModArmorItem;
-import net.project.macrov2.item.custom.TomahawkItem;
+import net.project.macrov2.item.custom.*;
 import net.project.macrov2.sounds.ModSounds;
 
 
@@ -71,7 +68,11 @@ public class ModItems {
     public static final Item TOMAHAWK = registerItem("tomahawk",new TomahawkItem(new Item.Settings().maxCount(16)));
 
     public static final Item SPECTRE_STAFF = registerItem("spectre_staff",new Item(new Item.Settings().maxCount(1)));
-
+    //gun
+    public static final Item AMMO = registerItem("ammo",new Item(new Item.Settings().maxCount(64)));
+    public static final Item GUN = registerItem("gun",new GunItem(new Item.Settings().maxCount(1).maxDamage(1000)));
+    public static final Item SHOTGUN = registerItem("shotgun",new ShotgunItem(new Item.Settings().maxCount(1).maxDamage(1000)));
+    //
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     {
@@ -115,6 +116,10 @@ public class ModItems {
             entries.add(MANTIS_SPAWN_EGG);
             //
             entries.add(SPECTRE_STAFF);
+            entries.add(AMMO);
+            entries.add(GUN);
+            entries.add(SHOTGUN);
+
         });
     }
 }

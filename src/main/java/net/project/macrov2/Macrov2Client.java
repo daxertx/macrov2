@@ -5,15 +5,14 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.entity.client.*;
 import net.project.macrov2.util.ModModelPredicates;
 
-import javax.swing.*;
 
-public class Macrov2Client implements ClientModInitializer {
+public class Macrov2Client implements ClientModInitializer
+{
     @Override
     public void onInitializeClient() {
         //can see through the trapdoor and door
