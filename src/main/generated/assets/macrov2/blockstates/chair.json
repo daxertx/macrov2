@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "macrov2:block/chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "macrov2:block/chair"
+    },
+    "facing=south": {
+      "model": "macrov2:block/chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "macrov2:block/chair",
+      "y": 270
+    }
+  }
+}

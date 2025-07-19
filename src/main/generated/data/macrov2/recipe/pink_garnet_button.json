@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": {
+      "item": "macrov2:pink_garnet_block"
+    }
+  },
+  "pattern": [
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "macrov2:pink_garnet_button"
+  }
+}

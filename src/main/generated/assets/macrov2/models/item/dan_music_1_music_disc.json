@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "macrov2:item/dan_music_1_music_disc"
+  }
+}

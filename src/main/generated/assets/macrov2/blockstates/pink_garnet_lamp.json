@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lamp_on=false": {
+      "model": "macrov2:block/pink_garnet_lamp"
+    },
+    "lamp_on=true": {
+      "model": "macrov2:block/pink_garnet_lampon"
+    }
+  }
+}
