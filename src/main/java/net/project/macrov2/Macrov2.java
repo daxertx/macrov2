@@ -1,9 +1,11 @@
 package net.project.macrov2;
 
+import com.ibm.icu.impl.ICUService;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
@@ -23,6 +25,9 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradedItem;
+import net.minecraft.village.VillagerProfession;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.component.ModDataComponentTypes;
 import net.project.macrov2.effect.ModEffects;
@@ -35,6 +40,7 @@ import net.project.macrov2.item.custom.HammerItem;
 import net.project.macrov2.potion.ModPotions;
 import net.project.macrov2.sounds.ModSounds;
 import net.project.macrov2.util.HammerUsageEvent;
+import net.project.macrov2.villager.ModVillagers;
 import net.project.macrov2.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -52,6 +58,9 @@ public class Macrov2 implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModDataComponentTypes.registerDataComponentType();
+
+		ModVillagers.registerVillagers();
+
 		//fuels
 		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
 		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
@@ -121,5 +130,48 @@ public class Macrov2 implements ModInitializer {
 		//
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
+		//villager trades
+		//lvl 1
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.KAUPENGER,1, factories ->
+		{
+			factories.add(((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,7),
+					new ItemStack(ModItems.DAN_MUSIC_1_MUSIC_DISC,1),2,7,0.1f)));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.KAUPENGER,1, factories ->
+		{
+			factories.add(((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,11),
+					new ItemStack(ModItems.DAN_MUSIC_2_MUSIC_DISC,1),2,7,0.1f)));
+		});
+		//lvl 2
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.KAUPENGER,2, factories ->
+		{
+			factories.add(((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,6),
+					new ItemStack(ModItems.PINK_GARNET_SMITHING_TEMPLATE,1),1,7,0.2f)));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.KAUPENGER,2, factories ->
+		{
+			factories.add(((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,3),
+					new ItemStack(ModItems.HONEY_BERRIES,1),99,7,0.01f)));
+		});
+		//lvl 3
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.KAUPENGER,3, factories ->
+		{
+			factories.add(((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,20),
+					new ItemStack(ModItems.CHISEL,1),1,7,0.1f)));
+		});
+
+		TradeOfferHelper.registerVillagerOffers(ModVillagers.KAUPENGER,3, factories ->
+		{
+			factories.add(((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD,3),
+					new ItemStack(ModItems.TOAST,2),99,7,0.01f)));
+		});
 	}
 }

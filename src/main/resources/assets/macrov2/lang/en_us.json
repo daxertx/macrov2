@@ -127,5 +127,6 @@
   "enchantment.macrov2.mining_fatigue": "Mining fatigue",
 
   "entity.macrov2.mantis": "Mantis",
-  "entity.macrov2.tomahawk": "Tomahawk"
+  "entity.macrov2.tomahawk": "Tomahawk",
+  "entity.minecraft.villager.kaupenger": "Kaupenger"
 }
