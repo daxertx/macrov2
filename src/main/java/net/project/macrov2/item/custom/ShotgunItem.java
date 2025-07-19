@@ -16,6 +16,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.project.macrov2.item.ModItems;
+import net.project.macrov2.particle.ModParticles;
 
 public class ShotgunItem extends Item {
 
@@ -96,7 +97,7 @@ public class ShotgunItem extends Item {
             }
 
             ((ServerWorld) world).spawnParticles(
-                    ParticleTypes.CRIT, // Or any particle you want
+                    ModParticles.AMMO_PARTICLE, // Or any particle you want
                     particlePos.x,
                     particlePos.y,
                     particlePos.z,

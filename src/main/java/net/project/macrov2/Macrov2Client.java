@@ -2,19 +2,24 @@ package net.project.macrov2;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.client.render.RenderLayer;
 import net.project.macrov2.block.ModBlocks;
 import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.entity.client.*;
+import net.project.macrov2.particle.AmmoParticle;
+import net.project.macrov2.particle.ModParticles;
 import net.project.macrov2.util.ModModelPredicates;
 
 
 public class Macrov2Client implements ClientModInitializer
 {
     @Override
-    public void onInitializeClient() {
+    public void onInitializeClient()
+    {
         //can see through the trapdoor and door
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_GARNET_TRAPDOOR, RenderLayer.getCutout());
@@ -37,6 +42,6 @@ public class Macrov2Client implements ClientModInitializer
 
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
 
-
+        ParticleFactoryRegistry.getInstance().register(ModParticles.AMMO_PARTICLE, AmmoParticle.Factory::new);
     }
 }

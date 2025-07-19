@@ -15,6 +15,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.project.macrov2.item.ModItems;
+import net.project.macrov2.particle.ModParticles;
 
 public class GunItem extends Item {
 
@@ -68,7 +69,7 @@ public class GunItem extends Item {
         for (double d = 0; d < maxDistance; d += step) {
             Vec3d particlePos = startPos.add(look.multiply(d));
             ((ServerWorld) world).spawnParticles(
-                    ParticleTypes.CRIT, // Or any particle you want
+                    ModParticles.AMMO_PARTICLE, // Or any particle you want
                     particlePos.x,
                     particlePos.y,
                     particlePos.z,

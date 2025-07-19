@@ -24,6 +24,7 @@ import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.entity.custom.MantisEntity;
 import net.project.macrov2.item.ModItemGroups;
 import net.project.macrov2.item.ModItems;
+import net.project.macrov2.particle.ModParticles;
 import net.project.macrov2.potion.ModPotions;
 import net.project.macrov2.sounds.ModSounds;
 import net.project.macrov2.util.HammerUsageEvent;
@@ -49,6 +50,7 @@ public class Macrov2 implements ModInitializer
 
 		ModVillagers.registerVillagers();
 
+		ModParticles.registerParticles();
 		//fuels
 		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
 		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
