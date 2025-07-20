@@ -5,9 +5,12 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 import net.project.macrov2.block.ModBlocks;
+import net.project.macrov2.block.entity.ModBlockEntities;
+import net.project.macrov2.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.project.macrov2.entity.ModEntities;
 import net.project.macrov2.entity.client.*;
 import net.project.macrov2.particle.AmmoParticle;
@@ -34,6 +37,8 @@ public class Macrov2Client implements ClientModInitializer
 
         EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS,MantisModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
 
         ModModelPredicates.registerModelPredicates();
 

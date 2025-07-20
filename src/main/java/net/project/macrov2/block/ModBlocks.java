@@ -88,8 +88,10 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",new SaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
     //
-     public static final Block CHAIR = registerBlock("chair",new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
+    public static final Block CHAIR = registerBlock("chair",new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
     //
+    public static final Block PEDESTAL = registerBlock("pedestal",new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
+
     private static Block registerBlockWithoutBlockItem(String name, Block block)
     {
         return Registry.register(Registries.BLOCK, Identifier.of(Macrov2.MOD_ID,name), block);
@@ -117,15 +119,15 @@ public class ModBlocks {
 
             entries.add(PINK_GARNET_ORE);
             entries.add(PINK_GARNET_DEEPSLATE_ORE);
-            //entries.add(ModBlocks.PINK_GARNET_NETHER_ORE);
-            //entries.add(ModBlocks.PINK_GARNET_END_ORE);
+            entries.add(ModBlocks.PINK_GARNET_NETHER_ORE);
+            entries.add(ModBlocks.PINK_GARNET_END_ORE);
 
             entries.add(ModBlocks.MAGIC_BLOCK);
             entries.add(ModBlocks.CHAIR);
 
             entries.add(ModBlocks.DIDDY_BLOCK);
 
-
+            entries.add(ModBlocks.PEDESTAL);
         });
 
     }

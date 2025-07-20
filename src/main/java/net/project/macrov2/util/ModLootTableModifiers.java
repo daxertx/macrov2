@@ -12,7 +12,8 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 import net.project.macrov2.item.ModItems;
 
-public class ModLootTableModifiers {
+public class ModLootTableModifiers
+{
     private static final Identifier GRASS_BLOCK_ID = Identifier.of("minecraft", "blocks/short_grass");
     private static final Identifier CREEPER_ID = Identifier.of("minecraft", "entities/creeper");
 

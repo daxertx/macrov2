@@ -46,6 +46,7 @@ public class ModItemGroups {
                     {
                         //adds items to item group
                         entries.add(ModBlocks.CHAIR);
+                        entries.add(ModBlocks.PEDESTAL);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
 

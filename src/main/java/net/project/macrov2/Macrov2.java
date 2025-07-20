@@ -17,6 +17,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradedItem;
 import net.project.macrov2.block.ModBlocks;
+import net.project.macrov2.block.entity.ModBlockEntities;
 import net.project.macrov2.component.ModDataComponentTypes;
 import net.project.macrov2.effect.ModEffects;
 import net.project.macrov2.enchantment.ModEnchantmentEffect;
@@ -69,6 +70,8 @@ public class Macrov2 implements ModInitializer
 		ModParticles.registerParticles();
 
 		ModLootTableModifiers.modifyLootTables();
+
+		ModBlockEntities.registerBlockEntities();
 		//fuels
 		FuelRegistry.INSTANCE.add(ModItems.COMPRESSED_STICK,900);
 		FuelRegistry.INSTANCE.add(ModItems.SUPER_COMPRESSED_STICK,8100);
