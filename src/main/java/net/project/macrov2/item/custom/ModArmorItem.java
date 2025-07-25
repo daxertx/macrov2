@@ -15,7 +15,8 @@ import net.project.macrov2.item.ModArmorMaterials;
 import java.util.List;
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+public class ModArmorItem extends ArmorItem
+{
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
@@ -23,28 +24,31 @@ public class ModArmorItem extends ArmorItem {
                                     //effects gained
                                     new StatusEffectInstance(StatusEffects.STRENGTH, 20, 1, true, true),
                                     new StatusEffectInstance(StatusEffects.ABSORPTION, 20, 2, true, true)
-                            )).build();
-                    /*
-                    * .put(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
+                            ))
+
+                    .put(ModArmorMaterials.SHADOW_ARMOR_MATERIAL,
                             List.of(
                                     //effects gained
                                     new StatusEffectInstance(StatusEffects.STRENGTH, 20, 1, false, false),
-                                    new StatusEffectInstance(StatusEffects.SPEED, 20, 1, false, false
+                                    new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 0, false, false
                                     ))).build();
-                                    * can add more armor sets
-                    *
-                    * */
+                                    //can add more armor sets
 
-    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
+
+    public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings)
+    {
         super(material, type, settings);
     }
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         //every tick checks if it's not client and if it is not it checks if player has full armor on and if he does he give the status effects
-        if(!world.isClient()) {
-            if(entity instanceof PlayerEntity player) {
-                if(hasFullSuitOfArmorOn(player)) {
+        if(!world.isClient())
+        {
+            if(entity instanceof PlayerEntity player)
+            {
+                if(hasFullSuitOfArmorOn(player))
+                {
                     //activate function if all requirements fulfilled
                     evaluateArmorEffects(player);
                 }

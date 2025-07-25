@@ -1,7 +1,7 @@
-// 1.21	2025-07-20T02:02:46.3815724	macrov2/
+// 1.21	2025-07-25T10:54:32.9003595	macrov2/
 d7a7d68c539c98540d887c742d6f6913f068184a data\macrov2\trim_pattern\pink_garnet_smithing_template.json
-62bc26cb5a6901bbf8d90771b0563ca82e0b67de data\macrov2\worldgen\configured_feature\driftwood.json
 5901469d7fe52cff20aa3514fa389603389f3349 data\macrov2\worldgen\configured_feature\nether_pink_garnet_ore.json
+62bc26cb5a6901bbf8d90771b0563ca82e0b67de data\macrov2\worldgen\configured_feature\driftwood.json
 9592a2ff596bcba7127e2793b1d04757357ca196 data\macrov2\worldgen\placed_feature\end_pink_garnet_ore_placed.json
 3d1c1c8d7daad34d3f4096958b59f56c5a18c4d6 data\macrov2\enchantment\freeze_striker.json
 46c5bb41fe4bbde4eb85fc15467b0a8b46de05ee data\macrov2\trim_material\pink_garnet.json
