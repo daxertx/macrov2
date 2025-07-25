@@ -37,6 +37,16 @@ public class ModArmorMaterials
         map.put(ArmorItem.Type.HELMET,4);
         map.put(ArmorItem.Type.BODY,4);
     }),20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,() -> Ingredient.ofItems(Items.NETHERITE_INGOT), List.of(new ArmorMaterial.Layer(Identifier.of(Macrov2.MOD_ID,"shadow"))),0,0));
+
+    public static final RegistryEntry<ArmorMaterial> IRON_MEN_ARMOR_MATERIAL = registerArmorMaterial("iron_men",()-> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map ->
+    {
+        map.put(ArmorItem.Type.BOOTS,6);
+        map.put(ArmorItem.Type.LEGGINGS,8);
+        map.put(ArmorItem.Type.CHESTPLATE,10);
+        map.put(ArmorItem.Type.HELMET,6);
+        map.put(ArmorItem.Type.BODY,6);
+    }),20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,() -> Ingredient.ofItems(Items.NETHERITE_INGOT), List.of(new ArmorMaterial.Layer(Identifier.of(Macrov2.MOD_ID,"iron_men"))),0,0));
+
     //numbers are toughness and knokbackbily
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material)

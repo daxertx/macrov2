@@ -110,6 +110,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SHADOW_LEGGINGS);
                         entries.add(ModItems.SHADOW_BOOTS);
 
+                        entries.add(ModItems.IRON_MEN_HELMET);
+                        entries.add(ModItems.IRON_MEN_CHESTPLATE);
+                        entries.add(ModItems.IRON_MEN_LEGGINGS);
+                        entries.add(ModItems.IRON_MEN_BOOTS);
 
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
                     })

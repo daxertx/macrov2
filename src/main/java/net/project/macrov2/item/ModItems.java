@@ -57,6 +57,11 @@ public class ModItems {
     public static final Item SHADOW_LEGGINGS = registerItem("shadow_leggings",new ArmorItem(ModArmorMaterials.SHADOW_ARMOR_MATERIAL,ArmorItem.Type.LEGGINGS,new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(16)).rarity(Rarity.RARE)));
     public static final Item SHADOW_BOOTS = registerItem("shadow_boots",new ArmorItem(ModArmorMaterials.SHADOW_ARMOR_MATERIAL,ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(16)).rarity(Rarity.RARE)));
 
+    public static final Item IRON_MEN_HELMET = registerItem("iron_men_helmet",new ModArmorItem(ModArmorMaterials.IRON_MEN_ARMOR_MATERIAL,ArmorItem.Type.HELMET,new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(16)).rarity(Rarity.RARE)));
+    public static final Item IRON_MEN_CHESTPLATE = registerItem("iron_men_chestplate",new ArmorItem(ModArmorMaterials.IRON_MEN_ARMOR_MATERIAL,ArmorItem.Type.CHESTPLATE,new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(16)).rarity(Rarity.RARE)));
+    public static final Item IRON_MEN_LEGGINGS = registerItem("iron_men_leggings",new ArmorItem(ModArmorMaterials.IRON_MEN_ARMOR_MATERIAL,ArmorItem.Type.LEGGINGS,new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(16)).rarity(Rarity.RARE)));
+    public static final Item IRON_MEN_BOOTS = registerItem("iron_men_boots",new ArmorItem(ModArmorMaterials.IRON_MEN_ARMOR_MATERIAL,ArmorItem.Type.BOOTS,new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(16)).rarity(Rarity.RARE)));
+
     //horse armor
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,AnimalArmorItem.Type.EQUESTRIAN,false,new Item.Settings().maxCount(1).rarity(Rarity.RARE)));
     //trims

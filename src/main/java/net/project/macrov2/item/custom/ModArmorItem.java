@@ -31,7 +31,14 @@ public class ModArmorItem extends ArmorItem
                                     //effects gained
                                     new StatusEffectInstance(StatusEffects.STRENGTH, 20, 1, false, false),
                                     new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 0, false, false
-                                    ))).build();
+                                    )))
+                    .put(ModArmorMaterials.IRON_MEN_ARMOR_MATERIAL,
+                            List.of(
+                                    //effects gained
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 20, 2, false, false),
+                                    new StatusEffectInstance(StatusEffects.LEVITATION, 20, 1, false, false
+                                    )))
+                    .build();
                                     //can add more armor sets
 
 
