@@ -126,12 +126,14 @@ public class ModItemGroups {
                         //MUSIC DISK
                         entries.add(ModItems.DAN_MUSIC_1_MUSIC_DISC);
                         entries.add(ModItems.DAN_MUSIC_2_MUSIC_DISC);
+
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.HONEY_BERRIES);
                         entries.add(ModItems.COMPRESSED_STICK);
                         entries.add(ModItems.SUPER_COMPRESSED_STICK);
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
+                        entries.add(ModItems.POWER);
                     })
                     .build());
 

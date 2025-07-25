@@ -84,6 +84,7 @@ public class ModItems {
     public static final Item GUN = registerItem("gun",new GunItem(new Item.Settings().maxCount(1).maxDamage(1000)));
     public static final Item SHOTGUN = registerItem("shotgun",new ShotgunItem(new Item.Settings().maxCount(1).maxDamage(1000)));
     //
+    public static final Item POWER = registerItem("power",new PowerItem(new Item.Settings().maxCount(1).maxDamage(20)));
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER))
     {
@@ -131,6 +132,8 @@ public class ModItems {
             entries.add(GUN);
             entries.add(SHOTGUN);
 
+
+            entries.add(POWER);
         });
     }
 }
