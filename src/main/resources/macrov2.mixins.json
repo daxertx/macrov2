@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "net.project.macrov2.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"client": [
+		"AbstractClientPlayerEntityMixin",
+		"ItemRendererMixin",
+		"ModelLoaderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

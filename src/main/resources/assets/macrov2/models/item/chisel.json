@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "macrov2:item/chisel"
+  },
+  "overrides":
+          [
+            {
+            "predicate":
+            {
+              "macrov2:change": 1
+            },
+            "model": "macrov2:item/chisel_haste"
+            }
+          ]
+}

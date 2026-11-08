@@ -1,0 +1,147 @@
+{
+
+  "item.macrov2.pink_garnet": "Pink garnet",
+  "item.macrov2.raw_pink_garnet": "Raw pink garnet",
+  "item.macrov2.gauntlet": "Gauntlet of a strong men",
+  "item.macrov2.cauliflower": "Cauliflower",
+  "item.macrov2.cauliflower_seeds": "Cauliflower seeds",
+  "item.macrov2.honey_berries": "Honey berries",
+
+
+  "item.macrov2.chisel": "Block modifier",
+  "item.macrov2.pink_garnet_hammer": "Very strong hammer",
+  "item.macrov2.tomahawk": "Tomahawk",
+
+
+  "item.macrov2.compressed_stick": "Compressed stick",
+  "item.macrov2.super_compressed_stick": "Super compressed stick",
+
+  "item.macrov2.toast": "Toast",
+
+  "item.macrov2.pink_garnet_sword": "Pink garnet sword",
+  "item.macrov2.pink_garnet_pickaxe": "Pink garnet pickaxe",
+  "item.macrov2.pink_garnet_axe": "Pink garnet axe",
+  "item.macrov2.pink_garnet_shovel": "Pink garnet shovel",
+  "item.macrov2.pink_garnet_hoe": "Pink garnet hoe",
+  "item.macrov2.kaupen_bow": "Kaupen bow",
+  "item.macrov2.spectre_staff": "Spectre staff",
+
+
+  "item.macrov2.pink_garnet_helmet": "Pink garnet helmet",
+  "item.macrov2.pink_garnet_chestplate": "Pink garnet chestplate",
+  "item.macrov2.pink_garnet_leggings": "Pink garnet leggings",
+  "item.macrov2.pink_garnet_boots": "Pink garnet boots",
+
+  "item.macrov2.shadow_helmet": "Shadow helmet",
+  "item.macrov2.shadow_chestplate": "Shadow chestplate",
+  "item.macrov2.shadow_leggings": "Shadow leggings",
+  "item.macrov2.shadow_boots": "Shadow boots",
+
+  "item.macrov2.iron_men_helmet": "Emerald helmet",
+  "item.macrov2.iron_men_chestplate": "Emerald chestplate",
+  "item.macrov2.iron_men_leggings": "Emerald leggings",
+  "item.macrov2.iron_men_boots": "Emerald boots",
+
+
+  "item.macrov2.pink_garnet_horse_armor": "Pink garnet horse armor",
+
+  "item.macrov2.dan_music_1_music_disc": "Dan music 1",
+  "item.macrov2.dan_music_2_music_disc": "Dan music 2",
+  "item.macrov2.dan_music_1_music_disc.desc": "1",
+  "item.macrov2.dan_music_2_music_disc.desc": "2",
+
+  "item.macrov2.mantis_spawn_egg": "Mantis spawn egg",
+
+
+  "block.macrov2.honey_berry_bush": "Honey berry bush",
+  "block.macrov2.cauliflower_crop": "Cauliflower crop",
+
+  "block.macrov2.magic_block": "Magic Block",
+
+  "block.macrov2.raw_pink_garnet_block": "Pink garnet ore",
+  "block.macrov2.pink_garnet_block": "Block of pink garnet",
+  "block.macrov2.pink_garnet_ore": "Pink garnet ore",
+  "block.macrov2.pink_garnet_deepslate_ore": "Pink garnet deepslate ore",
+  "block.macrov2.pink_garnet_end_ore": "Pink garnet end ore",
+  "block.macrov2.pink_garnet_nether_ore": "Pink garnet nether ore",
+
+
+
+  "block.macrov2.pink_garnet_stairs": "Pink garnet stairs",
+  "block.macrov2.pink_garnet_slab": "Pink garnet slab",
+
+  "block.macrov2.pink_garnet_button": "Pink garnet button",
+  "block.macrov2.pink_garnet_pressure_plate": "Pink garnet pressure plate",
+
+  "block.macrov2.pink_garnet_fence": "Pink garnet fence",
+  "block.macrov2.pink_garnet_fence_gate": "Pink garnet fence gate",
+  "block.macrov2.pink_garnet_wall": "Pink garnet wall",
+
+  "block.macrov2.pink_garnet_door": "Pink garnet door",
+  "block.macrov2.pink_garnet_trapdoor": "Pink garnet trapdoor",
+
+  "block.macrov2.pink_garnet_lamp": "Pink garnet lamp",
+  "block.macrov2.chair": "Chair",
+  "block.macrov2.pedestal": "Item display",
+
+
+  "block.macrov2.driftwood_log": "Driftwood log",
+  "block.macrov2.driftwood_wood": "Driftwood wood",
+  "block.macrov2.stripped_driftwood_log": "Stripped driftwood log",
+  "block.macrov2.stripped_driftwood_wood": "Stripped driftwood wood",
+  "block.macrov2.driftwood_planks": "Driftwood planks",
+  "block.macrov2.driftwood_leaves": "Driftwood leaves",
+  "block.macrov2.driftwood_sapling": "Driftwood sapling",
+
+  "itemgroup.macrov2.pink_garnet_items": "Modded items",
+  "itemgroup.macrov2.pink_garnet_blocks": "Modded blocks",
+  "itemgroup.macrov2.gears":"Modded gear",
+  "itemgroup.macrov2.misc":"Modded misc",
+
+
+  "tooltip.macrov2.magic_block.tooltip_shift_down": "A very §9MYSTERIOUS§r block that could change some items by being droped on",
+  "tooltip.macrov2.magic_block.tooltip": "Press §eShift§r to see more information",
+  "tooltip.macrov2.chisel.shift_down": "Change blocks to their brick version, could be reversed",
+  "tooltip.macrov2.chisel": "Press §eShift§r to see more information",
+  "tooltip.macrov2.cauliflower.tooltip": "This is delicious!",
+
+  "trim_pattern.macrov2.pink_garnet": "Pink garnet Material",
+  "trim_material.macrov2.pink_garnet": "Pink garnet Material",
+  "trim_pattern.macrov2.pink_garnet_smithing_template": "pink garnet Armor pattern",
+  "trim_pattern.macrov2.pink_garnet_template": "pink garnet Armor pattern",
+  "item.macrov2.pink_garnet_smithing_template": "Smithing template",
+
+  "effect.macrov2.slimey": "Slimey",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.slimey_potion": "Slimey tipped arrow",
+
+  "effect.macrov2.glow": "Slimey",
+
+  "item.minecraft.potion.effect.glow_potion": "Glow Potion",
+  "item.minecraft.splash_potion.effect.glow_potion": "Glow Splash Potion",
+  "item.minecraft.lingering_potion.effect.glow_potion": "Glow Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.glow_potion": "Glow tipped arrow",
+
+  "painting.macrov2.world.title": "World",
+  "painting.macrov2.world.author": "NanoAttack",
+  "painting.macrov2.shrimp.title": "Shrimp",
+  "painting.macrov2.shrimp.author": "NanoAttack",
+  "painting.macrov2.saw_them.title": "Saw Them",
+  "painting.macrov2.saw_them.author": "NanoAttack",
+
+  "enchantment.macrov2.lightning_striker": "Lightning striker",
+  "enchantment.macrov2.freeze_striker": "Freeze striker",
+  "enchantment.macrov2.poisen_striker": "Poisen striker",
+  "enchantment.macrov2.mining_fatigue": "Mining fatigue",
+
+  "entity.macrov2.mantis": "Mantis",
+  "entity.macrov2.tomahawk": "Tomahawk",
+  "entity.minecraft.villager.kaupenger": "Kaupenger",
+
+  "item.macrov2.gun": "AK47",
+  "item.macrov2.shotgun": "Shotgun",
+  "item.macrov2.ammo": "ammo"
+}

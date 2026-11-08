@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "macrov2:driftwood_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "macrov2:driftwood_planks"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "macrov2:pink_garnet"
+    },
+    "T": {
+      "item": "minecraft:redstone_lamp"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PTP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "macrov2:pink_garnet_lamp"
+  }
+}
